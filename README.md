@@ -1,4 +1,4 @@
-# macOS' Dotfiles
+# macOS Dotfiles
 
 ![](https://raw.githubusercontent.com/guiemi/mac-dotfiles/master/.screenshots/dotfiles-screenshot.png)
 
