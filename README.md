@@ -1,5 +1,7 @@
 # MacOS' Dotfiles
 
+![](https://raw.githubusercontent.com/guiemi/mac-dotfiles/master/.screenshots/dotfiles-screenshot.png)
+
 ## Localização de cada arquivo de configuração
 
 (Pois alguns têm o mesmo  nome, então navegar por entre as pastas pode não ser muito intuitivo.)
