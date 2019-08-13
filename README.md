@@ -13,7 +13,7 @@
 
 ## Bibliografia
 
-* Manage Dotfiles With a Bare Git Repository (Harfang's Perch): https://harfangk.github.io/2016/09/18/manage-dotfiles-with-a-git-bare-repository.html
-* Derek Taylor's Dotfiles (GitLab): https://gitlab.com/dwt1/dotfiles
-* The best way to store your dotfiles: A bare Git repository (Atlassian Tutorials): https://www.atlassian.com/git/tutorials/dotfiles
-
+* **Tutorial**: Manage Dotfiles With a Bare Git Repository (Harfang's Perch): https://harfangk.github.io/2016/09/18/manage-dotfiles-with-a-git-bare-repository.html
+* **Dotfiles**: Derek Taylor's Dotfiles (GitLab): https://gitlab.com/dwt1/dotfiles
+* **Tutorial**: The best way to store your dotfiles: A bare Git repository (Atlassian): https://www.atlassian.com/git/tutorials/dotfiles
+* **Video tutorial**: [Git Bare Repository - A Better Way To Manage Dotfiles (DistroTube)](https://www.youtube.com/watch?v=tBoLDpTWVOM)
