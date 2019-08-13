@@ -1,11 +1,11 @@
-# Mac Dotfiles
+# MacOS' Dotfiles
 
 ## Localização de cada arquivo de configuração
 
 (Pois alguns têm o mesmo  nome, então navegar por entre as pastas pode não ser muito intuitivo.)
 
-* [Neofetch](https://github.com/guiemi/mac-dotfiles/tree/master/.config/neofetch)
-* [Editor de Texto (Visual Studio Code)](https://github.com/guiemi/mac-dotfiles/tree/master/Library/Application%20Support/Code/User)
+* [Neofetch](https://github.com/guiemi/mac-dotfiles/blob/master/.config/neofetch/config.conf)
+* [Editor de Texto (Visual Studio Code)](https://github.com/guiemi/mac-dotfiles/blob/master/Library/Application%20Support/Code/User/settings.json)
 * [Git](https://github.com/guiemi/mac-dotfiles/blob/master/.gitconfig)
 * [Vim](https://github.com/guiemi/mac-dotfiles/blob/master/.vimrc)
 * [Shell (ZSH)](https://github.com/guiemi/mac-dotfiles/blob/master/.zshrc)
