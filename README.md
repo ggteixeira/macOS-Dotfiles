@@ -4,7 +4,7 @@
 
 ## O que são Dotfiles?
 
-Como o nome já sugere, dotfiles são **arquivos** que têm como característica principal serem nomeados com um ponto  (**dot** em inglês). O faz com que esses arquivos fiquem escondidos, evitando, assim, que  Eles geralmente ficam localizados na na pasta **home** do seu sistema de arquivos.
+Como o nome já sugere, dotfiles são **arquivos** que têm como característica principal serem nomeados com um ponto  (**dot** em inglês). O ponto faz com que esses arquivos fiquem escondidos, evitando, assim, alterações ou exclusões acidentais. Outra característica deles é que eles geralmente são criados na pasta **home** do seu sistema de arquivos. O `.bashrc` é certamente o dotfile mais popular atualmente, pois ele é responsável pelas configurações do Bash (*Bourne-again shell*).
 
 Usuários de sistemas *Unix-like* utilizam dotfiles organizados em repositórios (como no GitHub, GitLab ou BitBucket, por exemplo) para manterem um esquema de versionamento de seus arquivos de configuração e um backup simples de ser ativado em caso de acidentes ou em máquinas novas. Outra utilidade de disponibilizar em repositórios públicos esses arquivos e screenshots é inspirar outros usuários a fazerem o mesmo e ampliar o conhecimento sobre essa técnica simples que pode nos poupar bastante tempo e dor de cabeça.
 
