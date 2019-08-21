@@ -38,7 +38,6 @@
     "editor.snippetSuggestions": "none",
     "editor.suggestOnTriggerCharacters": false,
     "editor.tabCompletion": false,
-    "workbench.editor.tabSizing": "shrink",
     "workbench.statusBar.feedback.visible": false,
     "editor.fontFamily": "Helvetica",
     "python.autoComplete.addBrackets": true,
@@ -64,7 +63,6 @@
     "workbench.colorTheme": "Plastic",
     "terminal.external.linuxExec": "iTerm",
     "vim.statusBarColorControl": false,
-    "editor.colorDecorators": false,
     "breadcrumbs.enabled": true,
     "editor.renderControlCharacters": true,
     "editor.renderWhitespace": "none",
@@ -83,4 +81,6 @@
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
     "editor.wordWrap": "on",
+    "editor.colorDecorators": false,
+    "workbench.editor.tabSizing": "shrink",
 }
