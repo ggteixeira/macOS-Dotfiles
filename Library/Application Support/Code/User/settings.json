@@ -83,4 +83,5 @@
     "editor.wordWrap": "on",
     "editor.colorDecorators": false,
     "workbench.editor.tabSizing": "shrink",
+    "files.autoSave": "onFocusChange",
 }
