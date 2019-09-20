@@ -55,20 +55,17 @@ Plugin 'scrooloose/nerdtree'
 " let g:syntastic_check_on_wq = 0
 
 " ==== Color Schemes for Vim
-
-Plugin 'gosukiwi/vim-atom-dark'
-Plugin 'dylanaraps/wal.vim'
+" Plugin 'dylanaraps/wal.vim'
+" Plugin 'chriskempson/base16-vim'
 
 " ==== snippets
 
 " ==== Status bar on bottom (Powerline/Airline)
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-" Plugin 'powerline/powerline'
 
-" let g:airline_solarized_bg='dark'
-let g:airline_theme='wal'
-let g:airline_powerline_fonts = 1 
+" let g:airline_theme='wal'
+" let g:airline_powerline_fonts = 1 
 
 " ==== lints
 
@@ -102,8 +99,7 @@ set termencoding=utf-8
 if has("gui_running")
     let s:uname = system("uname")
     if s:uname == "Darwin\n"
-        set guifont=Source\ Code\ Pro\ for\ Powerline:h15
-        colorscheme PaperColor              " set color scheme
+        set guifont=Inconsolata\ for\ Powerline:h15
     endif
 endif
 
