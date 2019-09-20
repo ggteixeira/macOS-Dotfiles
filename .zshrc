@@ -150,3 +150,6 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 # Dotfiles (Bare Repository)
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
