@@ -1,14 +1,14 @@
 "==== Meu VimRC ===="
 
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible
+filetype off
 
 set number
 set smartindent
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-" set textwidth=4
+set textwidth=120
 set expandtab
 set autoindent
 set fileformat=unix
@@ -54,18 +54,15 @@ Plugin 'scrooloose/nerdtree'
 " let g:syntastic_check_on_open = 1
 " let g:syntastic_check_on_wq = 0
 
-" ==== Color Schemes for Vim
-" Plugin 'dylanaraps/wal.vim'
-" Plugin 'chriskempson/base16-vim'
-
 " ==== snippets
 
 " ==== Status bar on bottom (Powerline/Airline)
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
-" let g:airline_theme='wal'
 " let g:airline_powerline_fonts = 1 
+
+let g:airline_theme='random'
 
 " ==== lints
 
