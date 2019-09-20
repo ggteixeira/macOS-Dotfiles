@@ -4,6 +4,14 @@
 
 module.exports = {
   config: {
+
+    // hyper-tabs-enhanced
+    hyperTabs: {
+      trafficButtons: true,
+      tabIcons: true,
+      tabIconsColored: true,
+    },
+
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: 'stable',
