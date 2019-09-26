@@ -26,7 +26,7 @@ Para construir este README dos meus dotfiles, me inspirei basicamente nos do Der
 * [Git](https://github.com/guiemi/mac-dotfiles/blob/master/.gitconfig)
 * [Vim](https://github.com/guiemi/mac-dotfiles/blob/master/.vimrc)
 * [Shell (ZSH)](https://github.com/guiemi/mac-dotfiles/blob/master/.zshrc)
-* [Terminal (iTerm 2)](https://github.com/guiemi/mac-dotfiles/blob/master/com.googlecode.iterm2.plist)
+* [Terminal (Hyper)](https://github.com/guiemi/mac-dotfiles/blob/master/.hyper.js)
 
 ## Bibliografia
 
