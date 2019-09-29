@@ -22,7 +22,6 @@ Para construir este README dos meus dotfiles, me inspirei basicamente nos do Der
 (Pois alguns têm o mesmo  nome, então navegar por entre as pastas pode não ser muito intuitivo.)
 
 * [Neofetch](https://github.com/guiemi/mac-dotfiles/blob/master/.config/neofetch/config.conf)
-* [Editor de Texto (Visual Studio Code)](https://github.com/guiemi/mac-dotfiles/blob/master/Library/Application%20Support/Code/User/settings.json)
 * [Git](https://github.com/guiemi/mac-dotfiles/blob/master/.gitconfig)
 * [Vim](https://github.com/guiemi/mac-dotfiles/blob/master/.vimrc)
 * [Shell (ZSH)](https://github.com/guiemi/mac-dotfiles/blob/master/.zshrc)
