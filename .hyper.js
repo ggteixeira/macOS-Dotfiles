@@ -12,6 +12,32 @@ module.exports = {
       tabIconsColored: true,
     },
 
+    // hyper-pane:
+    paneNavigation: {
+      debug: false,
+      hotkeys: {
+        navigation: {
+          up: 'meta+ctrl+up',
+          down: 'meta+ctrl+down',
+          left: 'meta+ctrl+left',
+          right: 'meta+ctrl+right',
+        },
+        jump_prefix: 'ctrl+alt', // completed with 1-9 digits
+        permutation_modifier: 'shift', // Added to jump and navigation hotkeys for pane permutation
+        maximize: 'meta+enter'
+      },
+      showIndicators: true, // Show pane number
+      indicatorPrefix: '^⌥', // Will be completed with pane number
+      indicatorStyle: { // Added to indicator <div>
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        fontSize: '10px'
+      },
+      focusOnMouseHover: false,
+      inactivePaneOpacity: 0.6 // Set to 1 to disable inactive panes dimming
+    },
+
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: 'stable',
