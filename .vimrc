@@ -18,6 +18,7 @@ colorscheme industry  " set color scheme
 set showmatch                               " shows matching part of bracket pairs (), [], {}
 set enc=utf-8	                            " utf-8 by default
 set hlsearch
+set incsearch
 set syntax=python
 filetype plugin indent on
 filetype plugin on
