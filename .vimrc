@@ -113,7 +113,7 @@ let NERDTreeDirArrows = 1
 
 " # autocmd VimEnter * if !argc() | NERDTree | endif  " Load NERDTree only if vim is run without arguments
 nmap <C-h> :NERDTreeToggle<CR>
-map <C-\> :NERDTreeToggle<CR>
+map <C-p> :NERDTreeToggle<CR>
 
 " Atalhos personalizados
 
