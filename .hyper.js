@@ -4,14 +4,6 @@
 
 module.exports = {
   config: {
-
-    // hyper-tabs-enhanced
-    hyperTabs: {
-      trafficButtons: true,
-      tabIcons: true,
-      tabIconsColored: true,
-    },
-
     // hyper-pane:
     paneNavigation: {
       debug: false,
@@ -182,7 +174,6 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hyper-tabs-enhanced',
     'hyperterm-base-16-ocean', 
     'hyper-pane',
   ],
