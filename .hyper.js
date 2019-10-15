@@ -181,7 +181,11 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyperterm-base-16-ocean", "hyper-tabs-enhanced", "hyper-pane"],
+  plugins: [
+    'hyper-tabs-enhanced',
+    'hyperterm-base-16-ocean', 
+    'hyper-pane',
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
