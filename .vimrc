@@ -1,3 +1,8 @@
+" =====================================================
+" General settings
+" =====================================================
+
+
 syntax on
 filetype plugin on
 filetype off
@@ -10,6 +15,16 @@ set showmatch
 set enc=utf-8
 set hlsearch
 set incsearch
+set ignorecase
+set smartcase
+set wildmenu
+set autoindent
+
+" Display the cursor position on the last line of the screen or in the status line of a window
+set ruler
+
+ 
+
 
 "Vundle"
 
@@ -17,13 +32,13 @@ set incsearch
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" ==== plugin manager
+" plugin manager
 Plugin 'VundleVim/Vundle.vim'
 
-" ==== Autopair
+" Autopair
 Plugin 'jiangmiao/auto-pairs'
 
-" ==== Status bar on bottom (Powerline/Airline)
+" Status bar on bottom (Powerline/Airline)
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 let g:airline_theme='ayu_dark'
@@ -33,7 +48,7 @@ let g:airline_powerline_fonts = 0
 call vundle#end()            " required
 
 " =====================================================
-"" General settings
+" General settings
 " =====================================================
 
 """""""""""" Start Powerline Settings """"""""""""""""
