@@ -1,13 +1,11 @@
 " =====================================================
-" General settings
+" EDITOR settings
 " =====================================================
-
 
 syntax on
 filetype plugin on
 filetype off
 colorscheme industry
-
 set nocompatible
 set number
 set t_Co=256
@@ -19,14 +17,14 @@ set ignorecase
 set smartcase
 set wildmenu
 set autoindent
+let g:pymode_python = 'python3'
 
 " Display the cursor position on the last line of the screen or in the status line of a window
 set ruler
 
- 
-
-
-"Vundle"
+" =====================================================
+" VUNDLE settings
+" =====================================================
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -48,7 +46,17 @@ let g:airline_powerline_fonts = 0
 call vundle#end()            " required
 
 " =====================================================
-" General settings
+" PYTHON settings
+" =====================================================
+" Python-Syntax
+Plugin 'vim-python/python-syntax'
+
+let g:python_highlight_all = 1 
+let g:python_highlight_string_formatting = 1
+let g:Python3Syntax = 1
+
+" =====================================================
+" GENERAL settings
 " =====================================================
 
 """""""""""" Start Powerline Settings """"""""""""""""
@@ -77,7 +85,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " ==== Suporte ao Virtualenv
-
+if has('python')
 py << EOF
 import os
 import sys
@@ -86,3 +94,4 @@ if 'VIRTUAL_ENV' in os.environ:
   activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
   execfile(activate_this, dict(__file__=activate_this))
 EOF
+endif
