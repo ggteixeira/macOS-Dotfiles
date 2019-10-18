@@ -2,9 +2,9 @@
 " EDITOR settings
 " =====================================================
 
+filetype plugin indent on
 syntax on
-filetype plugin on
-filetype off
+filetype on
 colorscheme industry
 set nocompatible
 set number
