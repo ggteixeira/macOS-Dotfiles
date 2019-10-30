@@ -30,6 +30,11 @@ module.exports = {
       inactivePaneOpacity: 0.6 // Set to 1 to disable inactive panes dimming
     },
 
+    hyperTabs: {
+      tabIcons: true,
+      tabIconsColored: true,
+    },
+
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: 'stable',
