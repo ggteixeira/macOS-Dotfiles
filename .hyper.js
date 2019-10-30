@@ -176,6 +176,7 @@ module.exports = {
   plugins: [
     'hyperterm-base-16-ocean', 
     'hyper-pane',
+    'hyper-tabs-enhanced',
   ],
 
   // in development, you can create a directory under
