@@ -16,7 +16,7 @@ module.exports = {
         },
         jump_prefix: 'ctrl+alt', // completed with 1-9 digits
         permutation_modifier: 'shift', // Added to jump and navigation hotkeys for pane permutation
-        maximize: 'meta+enter'
+        maximize: 'ctrl+alt+return'
       },
       showIndicators: true, // Show pane number
       indicatorPrefix: '^⌥', // Will be completed with pane number
