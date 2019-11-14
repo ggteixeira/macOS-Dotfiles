@@ -155,3 +155,11 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# load virtualenvwrapper for python (after custom PATHs)
+venvwrap="virtualenvwrapper.sh"
+/usr/bin/which -s $venvwrap
+if [ $? -eq 0 ]; then
+    venvwrap=`/usr/bin/which $venvwrap`
+    source $venvwrap
+fi
