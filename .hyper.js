@@ -33,6 +33,8 @@ module.exports = {
     hyperTabs: {
       tabIcons: true,
       tabIconsColored: true,
+      trafficButtons: true,
+      activityColor: 'salmon',
     },
 
     // choose either `'stable'` for receiving highly polished,
