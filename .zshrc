@@ -163,3 +163,6 @@ if [ $? -eq 0 ]; then
     venvwrap=`/usr/bin/which $venvwrap`
     source $venvwrap
 fi
+
+# LOCALE
+export LC_ALL=en_US.UTF-8
