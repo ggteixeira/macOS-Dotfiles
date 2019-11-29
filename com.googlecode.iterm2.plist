@@ -52683,7 +52683,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>131 299 808 507 0 0 1440 877 </string>
+	<string>23 136 570 417 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -54118,6 +54118,8 @@
 	</array>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/guiemi</string>
+	<key>PromptOnQuit</key>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -54132,6 +54134,8 @@
 	<false/>
 	<key>ShowNewOutputIndicator</key>
 	<false/>
+	<key>SmartPlacement</key>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>StatusBarPosition</key>
