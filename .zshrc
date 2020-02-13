@@ -107,6 +107,7 @@ source $ZSH/oh-my-zsh.sh
 alias li='ls -l'
 alias workoff='deactivate'
 alias gpom='git push origin master'
+alias vimrc='vim ~/.vimrc'
 
 # Python virtual environments:
 # https://github.com/registerguard/registerguard.github.com/wiki/Install-python,-virtualenv,-virtualenvwrapper-in-a-brew-environment
