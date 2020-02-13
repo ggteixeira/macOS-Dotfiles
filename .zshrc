@@ -102,12 +102,12 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 alias li='ls -l'
 alias workoff='deactivate'
-alias gpom='git push origin master'
 alias vimrc='vim ~/.vimrc'
+alias zshrc="vim ~/.zshrc"
 
 # Python virtual environments:
 # https://github.com/registerguard/registerguard.github.com/wiki/Install-python,-virtualenv,-virtualenvwrapper-in-a-brew-environment
