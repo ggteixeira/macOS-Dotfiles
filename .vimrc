@@ -61,7 +61,8 @@ let g:Python3Syntax = 1
 
 """""""""""" Start Powerline Settings """"""""""""""""
 
-set guifont=Inconsolata-dz\ for\ Powerline:h30
+set guifont=Hack:h30
+"set guifont=Inconsolata-dz\ for\ Powerline:h30
 let g:Powerline_symbols = 'fancy'
 set encoding=utf-8
 set t_Co=256
