@@ -108,6 +108,7 @@ alias li='ls -l'
 alias workoff='deactivate'
 alias vimrc='vim ~/.vimrc'
 alias zshrc="vim ~/.zshrc"
+alias gpom="git push origin master"
 
 # Python virtual environments:
 # https://github.com/registerguard/registerguard.github.com/wiki/Install-python,-virtualenv,-virtualenvwrapper-in-a-brew-environment
