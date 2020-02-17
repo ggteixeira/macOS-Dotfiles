@@ -70,7 +70,7 @@ plugins=(
 
 # Configurações do prompt do PowerLevel9K:
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(``virtualenv dir vcs status)
-POWERLEVEL9K_DISABLE_RPROMPT=true
+POWERLEVEL9K_DISABLE_PROMPT=true
 
 
 
