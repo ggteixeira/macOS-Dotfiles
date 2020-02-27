@@ -1,10 +1,9 @@
-" =====================================================
-" EDITOR settings
-" =====================================================
+" Meu Vimrc
 
-filetype plugin indent on
-syntax on
 filetype on
+filetype plugin on 
+filetype indent on
+syntax on
 colorscheme industry
 set nocompatible
 set number
@@ -48,6 +47,7 @@ call vundle#end()            " required
 " =====================================================
 " PYTHON settings
 " =====================================================
+
 " Python-Syntax
 Plugin 'vim-python/python-syntax'
 
@@ -59,7 +59,7 @@ let g:Python3Syntax = 1
 " GENERAL settings
 " =====================================================
 
-"""""""""""" Start Powerline Settings """"""""""""""""
+"""""""""""" Start Powerline Settings 
 
 set guifont=Hack:h30
 "set guifont=Inconsolata-dz\ for\ Powerline:h30
@@ -77,7 +77,7 @@ if has("gui_running")
     endif
 endif
 
-""""""""""" END of PowerLine Settings  """""""""""""'
+""""""""""" END of PowerLine Settings  
 
 "Atalhos personalizados
 nnoremap <C-J> <C-W><C-J>
