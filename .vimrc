@@ -1,4 +1,8 @@
-" Meu Vimrc
+" My Vimrc
+" URL: https://github.com/guiemi/mac-dotfiles/blob/master/.vimrc
+" Auhor: Guilherme Teixeira
+" Description: My personal VIMRC, built along the years in order to fulfull my
+" needs. 
 
 filetype on
 filetype plugin on 
@@ -17,6 +21,9 @@ set smartcase
 set wildmenu
 set autoindent
 let g:pymode_python = 'python3'
+" Backspace over anything in insert mode:
+set backspace=indent,eol,start
+
 
 " Display the cursor position on the last line of the screen or in the status line of a window
 set ruler
