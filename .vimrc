@@ -4,29 +4,100 @@
 " Description: My personal VIMRC, built along the years in order to fulfull my
 " needs. 
 
-filetype on
-filetype plugin on 
-filetype indent on
-syntax on
-colorscheme industry
+" =====================================================
+" FEATURES
+" =====================================================
+
+" Avoid unexpected things that the OS may have made:
 set nocompatible
+
+"
+filetype indent plugin on
+
+" Syntax highlighting
+syntax on
+
+" =====================================================
+" MUST HAVE options 
+" =====================================================
+
+" Managing multiple instances of Vim
+set hidden
+
+" Show partial commands in the last line of the screen
+set showcmd
+
+" Set colorscheme
+colorscheme industry
+
+" Highlight searches
+set hlsearch
+
+" =====================================================
+" USABILITY options
+" =====================================================
+" Allow backspacing over autoindent, line breaks and start of insert action
+set backspace=indent,eol,start
+
+" Keeps the same indent as the line you're currently on
+set autoindent
+
+ " Display the cursor position on the last line of the screen or in the status line of a window
+set ruler
+
+" Use case insensitive search, execpt when using capital letters
+set ignorecase
+set smartcase
+
+" Stop certain movements from always going to the first character of a line.
+" While this behaviour deviates from that of Vi, it does what most users
+" coming from other editors would expect.
+set nostartofline
+
+" Always display the status line, even if only one window is displayed
+set laststatus=2
+
+" Instead of failing a command because of unsaved changes, instead raise a
+" dialogue asking if you wish to save changed files.
+set confirm
+
+" Enable use of mouse for all modes
+set mouse=a
+
+" Show line numbers on the left
 set number
+
+" =====================================================
+" INDENTATION options
+" =====================================================
+
+" Indentation settings for using 4 spaces instead of tabs.
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+" =====================================================
+" OTHER options
+" =====================================================
 set t_Co=256
 set showmatch
 set enc=utf-8
-set hlsearch
 set incsearch
-set ignorecase
-set smartcase
+
+" Better command-line completion
 set wildmenu
-set autoindent
-let g:pymode_python = 'python3'
-" Backspace over anything in insert mode:
-set backspace=indent,eol,start
 
+" =====================================================
+" MAPPINGS
+" C => Control | S => Shift
+" =====================================================
 
-" Display the cursor position on the last line of the screen or in the status line of a window
-set ruler
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <S-Tab> << 
+inoremap <S-Tab> <C-d>
 
 " =====================================================
 " VUNDLE settings
@@ -61,17 +132,20 @@ Plugin 'vim-python/python-syntax'
 let g:python_highlight_all = 1 
 let g:python_highlight_string_formatting = 1
 let g:Python3Syntax = 1
+let g:pymode_python = 'python3'
 
 " =====================================================
-" GENERAL settings
+" START Powerline settings
 " =====================================================
 
-"""""""""""" Start Powerline Settings 
-
+" Set font
 set guifont=Hack:h30
-"set guifont=Inconsolata-dz\ for\ Powerline:h30
+
 let g:Powerline_symbols = 'fancy'
+
+" Set encoding
 set encoding=utf-8
+
 set t_Co=256
 set fillchars+=stl:\ ,stlnc:\
 set term=xterm-256color
@@ -83,18 +157,12 @@ if has("gui_running")
         set guifont=Inconsolata-dz\ for\ Powerline:h15
     endif
 endif
+""""""""""""""""" END of PowerLine Settings  
 
-""""""""""" END of PowerLine Settings  
+" =====================================================
+" VIRTUALENV
+" =====================================================
 
-"Atalhos personalizados
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-nnoremap <S-Tab> << 
-inoremap <S-Tab> <C-d>
-
-" ==== Suporte ao Virtualenv
 if has('python')
 py << EOF
 import os
