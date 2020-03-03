@@ -47,7 +47,7 @@ set ruler
 
 " Use case insensitive search, execpt when using capital letters
 set ignorecase
-set smartcase
+" set smartcase
 
 " Stop certain movements from always going to the first character of a line.
 " While this behaviour deviates from that of Vi, it does what most users
