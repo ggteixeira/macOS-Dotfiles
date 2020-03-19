@@ -17,7 +17,11 @@ filetype indent plugin on
 " Syntax highlighting
 syntax on
 
-" =====================================================
+
+" Copy to clipboard
+set clipboard=unnamed
+
+"" =====================================================
 " MUST HAVE options 
 " =====================================================
 
