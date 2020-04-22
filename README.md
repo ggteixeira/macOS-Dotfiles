@@ -29,7 +29,7 @@ Para construir este README dos meus dotfiles, me inspirei basicamente nos do Der
 * [Shell (ZSH)](https://github.com/guiemi/mac-dotfiles/blob/master/.zshrc)
 * [Terminal (iTerm2)](https://github.com/guiemi/mac-dotfiles/blob/master/com.googlecode.iterm2.plist)
 * Visual Studio Code
-  *  [snippets](https://github.com/guiemi/mac-dotfiles/blob/master/snippets/python.json), 
+  *  [snippets](https://github.com/guiemi/mac-dotfiles/blob/master/snippets/python.json)
   * [keybindings](https://github.com/guiemi/mac-dotfiles/blob/master/keybindings.json)
   * [configurações](https://github.com/guiemi/mac-dotfiles/blob/master/settings.json)
 
