@@ -96,4 +96,5 @@
     "editor.fontLigatures": true,
     "debug.console.fontFamily": "Hack",
     "terminal.integrated.lineHeight": 1.1,
+    "code-runner.ignoreSelection": true,
 }
