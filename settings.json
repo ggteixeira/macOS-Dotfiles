@@ -79,7 +79,6 @@
     "editor.wordWrap": "on",
     "editor.colorDecorators": false,
     "workbench.editor.tabSizing": "shrink",
-    "files.autoSave": "onFocusChange",
     "editor.renderLineHighlight": "gutter",
     "vim.cursorStylePerMode.insert": "line-thin",
     "vim.cursorStylePerMode.normal": "block",
@@ -97,4 +96,5 @@
     "debug.console.fontFamily": "Hack",
     "terminal.integrated.lineHeight": 1.1,
     "code-runner.ignoreSelection": true,
+    "files.autoSave": "onFocusChange",
 }
