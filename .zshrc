@@ -173,3 +173,6 @@ export LC_ALL=en_US.UTF-8
 export PATH=${PATH}:/Applications/Android
 
 
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
