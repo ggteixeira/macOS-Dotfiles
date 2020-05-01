@@ -114,10 +114,15 @@ call vundle#begin()
 " plugin manager
 Plugin 'VundleVim/Vundle.vim'
 
+
 " Autopair
 Plugin 'jiangmiao/auto-pairs'
 
-" Status bar on bottom (Powerline/Airline)
+" Autocomplete
+Plugin 'davidhalter/jedi-vim'
+
+
+"" Status bar on bottom (Powerline/Airline)
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 let g:airline_theme='bubblegum'
@@ -137,6 +142,7 @@ let g:python_highlight_all = 1
 let g:python_highlight_string_formatting = 1
 let g:Python3Syntax = 1
 let g:pymode_python = 'python3'
+
 
 " =====================================================
 " START Powerline settings
