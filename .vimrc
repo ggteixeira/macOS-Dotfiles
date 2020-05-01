@@ -130,10 +130,10 @@ Plugin 'vim-airline/vim-airline-themes'
 let g:airline_theme='bubblegum'
 let g:airline_powerline_fonts = 1
 
-" NerdTree
+" NERDTree
 Plugin 'preservim/nerdtree'
 
-map <C-_> :NERDTreeToggle<CR> " underscore stands for slash
+nmap <C-n> :NERDTreeToggle<CR>
 
 
 " All of your Plugins must be added before the following line
