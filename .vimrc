@@ -118,9 +118,11 @@ Plugin 'VundleVim/Vundle.vim'
 " Autopair
 Plugin 'jiangmiao/auto-pairs'
 
-" Autocomplete
+" Autocomplete (Jedi)
 Plugin 'davidhalter/jedi-vim'
 
+" Linter (ALE)
+Plugin 'dense-analysis/ale'
 
 "" Status bar on bottom (Powerline/Airline)
 Plugin 'vim-airline/vim-airline'
