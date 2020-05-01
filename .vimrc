@@ -114,7 +114,6 @@ call vundle#begin()
 " plugin manager
 Plugin 'VundleVim/Vundle.vim'
 
-
 " Autopair
 Plugin 'jiangmiao/auto-pairs'
 
@@ -124,11 +123,18 @@ Plugin 'davidhalter/jedi-vim'
 " Linter (ALE)
 Plugin 'dense-analysis/ale'
 
+
 "" Status bar on bottom (Powerline/Airline)
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 let g:airline_theme='bubblegum'
 let g:airline_powerline_fonts = 1
+
+" NerdTree
+Plugin 'preservim/nerdtree'
+
+map <C-_> :NERDTreeToggle<CR> " underscore stands for slash
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
