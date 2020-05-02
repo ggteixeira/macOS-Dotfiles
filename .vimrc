@@ -127,7 +127,7 @@ Plugin 'dense-analysis/ale'
 "" Status bar on bottom (Powerline/Airline)
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-let g:airline_theme='bubblegum'
+let g:airline_theme='base16_adwaita'
 let g:airline_powerline_fonts = 1
 
 " NERDTree
