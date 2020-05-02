@@ -178,8 +178,6 @@ export LC_ALL=en_US.UTF-8
 # Fastboot
 export PATH=${PATH}:/Applications/Android
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
