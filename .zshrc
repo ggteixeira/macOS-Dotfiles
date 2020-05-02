@@ -74,7 +74,6 @@ plugins=(
   git
   zsh-autosuggestions
   virtualenvwrapper
-  zsh-syntax-highlighting
 )
 
 # Configurações do prompt do PowerLevel9K:
