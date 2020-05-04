@@ -52629,12 +52629,18 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>5679A522-81C7-4331-BB78-39EB903175FA</string>
+	<key>DimBackgroundWindows</key>
+	<false/>
+	<key>DimInactiveSplitPanes</key>
+	<true/>
+	<key>DimOnlyText</key>
+	<true/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideActivityIndicator</key>
 	<true/>
 	<key>HideTab</key>
-	<false/>
+	<true/>
 	<key>HideTabNumber</key>
 	<false/>
 	<key>Hotkey</key>
@@ -52705,7 +52711,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1788 226 885 518 1440 0 1600 877 </string>
+	<string>1440 0 1600 877 1440 0 1600 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_5679A522-81C7-4331-BB78-39EB903175FA</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_5679A522-81C7-4331-BB78-39EB903175FA_selection</key>
@@ -52911,7 +52917,7 @@
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
-			<true/>
+			<integer>1</integer>
 			<key>Columns</key>
 			<integer>125</integer>
 			<key>Command</key>
@@ -53441,7 +53447,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGSDZForPowerline-Regular 12</string>
+			<string>HackNerdFontComplete-Regular 13</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -53507,7 +53513,7 @@
 			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>0.87</real>
+			<real>0.84999999999999998</real>
 			<key>Visual Bell</key>
 			<false/>
 			<key>Window Type</key>
@@ -53529,10 +53535,8 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>Meslo LG S DZ for Powerline</string>
-		<string>Meslo LG M for Powerline</string>
-		<string>MesloLGS NF</string>
-		<string>Meslo LG M DZ for Powerline</string>
+		<string>Hack Nerd Font Mono</string>
+		<string>Hack Nerd Font</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -53546,9 +53550,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{1440, 0}, {1600, 900}}</string>
+		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{1853, 646}</string>
+		<string>{195, 605}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -53557,7 +53561,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>596639959.23297501</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>45</integer>
+	<integer>47</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -54334,6 +54338,8 @@
 	<false/>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
+	<key>PerPaneBackgroundImage</key>
+	<true/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -54382,7 +54388,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-05-02T00:49:03Z</date>
+	<date>2020-05-03T00:49:04Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
@@ -54397,26 +54403,30 @@
 	<false/>
 	<key>ShowNewOutputIndicator</key>
 	<false/>
+	<key>ShowPaneTitles</key>
+	<true/>
 	<key>SmartPlacement</key>
 	<true/>
 	<key>SoundForEsc</key>
 	<false/>
+	<key>SplitPaneDimmingAmount</key>
+	<real>0.34816600177304974</real>
 	<key>StatusBarPosition</key>
 	<integer>0</integer>
 	<key>StretchTabsToFillBar</key>
-	<true/>
+	<false/>
 	<key>TabStyleWithAutomaticOption</key>
-	<integer>6</integer>
+	<integer>5</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>TabsHaveCloseButton</key>
-	<true/>
+	<false/>
 	<key>UseMetal</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>WindowNumber</key>
-	<true/>
+	<false/>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>

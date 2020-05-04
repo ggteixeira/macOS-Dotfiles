@@ -62,7 +62,6 @@
     "color-highlight.markerType": "dot-after",
     "workbench.colorTheme": "Plastic - deprioritised punctuation",
     "terminal.external.linuxExec": "iTerm",
-    "vim.statusBarColorControl": true,
     "breadcrumbs.enabled": true,
     "editor.renderControlCharacters": true,
     "editor.renderWhitespace": "none",
@@ -79,13 +78,6 @@
     "editor.colorDecorators": false,
     "workbench.editor.tabSizing": "shrink",
     "editor.renderLineHighlight": "gutter",
-    "vim.cursorStylePerMode.insert": "line-thin",
-    "vim.cursorStylePerMode.normal": "block",
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f"
-    },
     "city-lights-icons-vsc.hidesExplorerArrows": false,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -96,4 +88,5 @@
     "code-runner.ignoreSelection": true,
     "files.autoSave": "onFocusChange",
     "terminal.integrated.fontFamily": "'Source Code Pro for Powerline', 'Hack Nerd Font'",
+    "python.terminal.activateEnvInCurrentTerminal": true,
 }
