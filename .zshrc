@@ -117,6 +117,7 @@ alias vimrc='vim ~/.vimrc'
 alias zshrc="vim ~/.zshrc"
 alias gpom="git push origin master"
 alias power='vim .p10k.zsh'
+alias lc='colorls -lA --sd'
 # Python virtual environments:
 # https://github.com/registerguard/registerguard.github.com/wiki/Install-python,-virtualenv,-virtualenvwrapper-in-a-brew-environment
 export WORKON_HOME=$HOME/.virtualenvs
