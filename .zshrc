@@ -103,22 +103,68 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+### ALIASES ###
 
-alias li='ls -l'
-alias workoff='deactivate'
-alias vimrc='vim ~/.vimrc'
-alias zshrc="vim ~/.zshrc"
+alias g='git'
+alias ga='git add'
+alias gaa='git add --all'
+alias gap='git apply'
+alias gapa='git add --patch'
+alias gau='git add --update'
+alias gav='git add --verbose'
+alias gb='git branch'
+alias gbD='git branch -D'
+alias gba='git branch -a'
+alias gbd='git branch -d'
+alias gbda='git branch --no-color --merged | command grep -vE "^(\*|\s*(master|develop|dev)\s*$)" | command xargs -n 1 git branch -d'
+alias gbl='git blame -b -w'
+alias gbnm='git branch --no-merged'
+alias gbr='git branch --remote'
+alias gbs='git bisect'
+alias gbsb='git bisect bad'
+alias gbsg='git bisect good'
+alias gbsr='git bisect reset'
+alias gbss='git bisect start'
+alias gc!='git commit -v --amend'
+alias gc='git commit -v'
+alias gca!='git commit -v -a --amend'
+alias gca='git commit -v -a'
+alias gcam='git commit -a -m'
+alias gcan!='git commit -v -a --no-edit --amend'
+alias gcans!='git commit -v -a -s --no-edit --amend'
+alias gcb='git checkout -b'
+alias gcd='git checkout develop'
+alias gcf='git config --list'
+alias gcl='git clone --recurse-submodules'
+alias gclean='git clean -fd'
+alias gcm='git checkout master'
+alias gcmsg='git commit -m'
+alias gcn!='git commit -v --no-edit --amend'
+alias gco='git checkout'
+alias gcount='git shortlog -sn'
+alias gcp='git cherry-pick'
+alias gcpa='git cherry-pick --abort'
+alias gcpc='git cherry-pick --continue'
+alias gcs='git commit -S'
+alias gcsm='git commit -s -m'
+alias gd='git diff'
+alias gdca='git diff --cached'
+alias gdct='git describe --tags `git rev-list --tags --max-count=1`'
+alias gdcw='git diff --cached --word-diff'
+alias gds='git diff --staged'
+alias gdt='git diff-tree --no-commit-id --name-only -r'
+alias gdw='git diff --word-diff'
 alias gpom="git push origin master"
-alias power='vim .p10k.zsh'
+alias gpristine='git reset --hard && git clean -dfx'
 alias lc='colorls -lA --sd'
-# Python virtual environments:
+alias li='ls -l'
+alias power='vim .p10k.zsh'
+alias vimrc='vim ~/.vimrc'
+alias workoff='deactivate'
+alias zshrc="vim ~/.zshrc"
+
+
+ Python virtual environments:
 # https://github.com/registerguard/registerguard.github.com/wiki/Install-python,-virtualenv,-virtualenvwrapper-in-a-brew-environment
 export WORKON_HOME=$HOME/.virtualenvs
 #export WORKON_HOME=/tmp/foo/.virtualenvs
