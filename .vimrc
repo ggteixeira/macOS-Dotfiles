@@ -118,7 +118,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'jiangmiao/auto-pairs'
 
 " Autocomplete (Jedi)
-Plugin 'davidhalter/jedi-vim'
+" Plugin 'davidhalter/jedi-vim'
 
 " Linter (ALE)
 Plugin 'dense-analysis/ale'
