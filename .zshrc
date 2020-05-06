@@ -20,6 +20,8 @@ AUTO_MENU=1
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+export TERM="xterm-256color"
+
 ###############
 ### ALIASES ###
 ###############
@@ -264,6 +266,8 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 # zsh-autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=4'
+
 # powerlevel10k (Theme)
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
@@ -273,3 +277,7 @@ autoload -Uz compinit
 compinit
 
 zstyle ':completion:*' menu yes select
+
+if [[ "${terminfo[kcbt]}" != "" ]]; then
+  bindkey "${terminfo[kcbt]}" reverse-menu-complete   # [Shift-Tab] - move through the completion menu backwards
+fi
