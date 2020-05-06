@@ -16,7 +16,7 @@ export ZSH="/Users/guiemi/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="agnoster"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -70,11 +70,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-  zsh-autosuggestions
-  virtualenvwrapper
-)
+plugins=()
+
+
 
 # Configurações do prompt do PowerLevel9K:
 # POWERLEVEL10K_LEFT_PROMPT_ELEMENTS=(virtualenv dir vcs status)
@@ -164,7 +162,7 @@ alias workoff='deactivate'
 alias zshrc="vim ~/.zshrc"
 
 
- Python virtual environments:
+# Python virtual environments:
 # https://github.com/registerguard/registerguard.github.com/wiki/Install-python,-virtualenv,-virtualenvwrapper-in-a-brew-environment
 export WORKON_HOME=$HOME/.virtualenvs
 #export WORKON_HOME=/tmp/foo/.virtualenvs
@@ -230,11 +228,20 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Syntax Highlighting
+###############
+### PLUGINS ###
+###############
+
+# zsh-syntax-highlighting 
 source /Users/guiemi/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
-
 (( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
+
+# zsh-autosuggestions
+source /Users/guiemi/zsh_plugins/zsh-autosuggestions.zsh
+
+# powerlevel10k (Theme)
+source /Users/guiemi/zsh_plugins/powerlevel10k/powerlevel10k.zsh-theme
+
