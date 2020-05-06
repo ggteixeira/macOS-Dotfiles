@@ -26,6 +26,10 @@ export TERM="xterm-256color"
 ### ALIASES ###
 ###############
 
+# General aliases
+alias grep='grep --color=auto'
+
+# Git aliases
 alias g='git'
 alias ga='git add'
 alias gaa='git add --all'
