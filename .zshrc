@@ -5,6 +5,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+AUTO_MENU=1
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -33,7 +35,6 @@ alias gb='git branch'
 alias gbD='git branch -D'
 alias gba='git branch -a'
 alias gbd='git branch -d'
-alias gbda='git branch --no-color --merged | command grep -vE "^(\*|\s*(master|develop|dev)\s*$)" | command xargs -n 1 git branch -d'
 alias gbda='git branch --no-color --merged | command grep -vE "^(\+|\*|\s*(master|develop|dev)\s*$)" | command xargs -n 1 git branch -d'
 alias gbl='git blame -b -w'
 alias gbnm='git branch --no-merged'
@@ -266,3 +267,9 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # powerlevel10k (Theme)
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
+# completion
+
+autoload -Uz compinit
+compinit
+
+zstyle ':completion:*' menu yes select
