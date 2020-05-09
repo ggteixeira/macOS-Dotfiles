@@ -32,6 +32,9 @@ export TERM="xterm-256color"
 alias grep='grep --color=auto'
 alias ..='cd ..'
 
+# Dotfiles aliases (Bare Repository)
+alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
+
 # Git aliases
 alias g='git'
 alias ga='git add'
@@ -194,58 +197,53 @@ alias vimrc='vim ~/.vimrc'
 alias workoff='deactivate'
 alias zshrc="vim ~/.zshrc"
 
-
-# Python virtual environments:
-# https://github.com/registerguard/registerguard.github.com/wiki/Install-python,-virtualenv,-virtualenvwrapper-in-a-brew-environment
-export WORKON_HOME=$HOME/.virtualenvs
-#export WORKON_HOME=/tmp/foo/.virtualenvs
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-export PIP_VIRTUALENV_BASE=$WORKON_HOME
-export PIP_RESPECT_VIRTUALENV=true
-if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
-    source /usr/local/bin/virtualenvwrapper.sh
-else
-    echo "WARNING: Can't find virtualenvwrapper.sh"
-fi
-
-# pip should only run if there is a virtualenv currently activated
-export PIP_REQUIRE_VIRTUALENV=false
-
-# create commands to override pip restriction.
-# use `gpip` or `gpip3` to force installation of
-# a package in the global python environment
-gpip(){
-   PIP_REQUIRE_VIRTUALENV="" pip "$@"
-}
-gpip3(){
-   PIP_REQUIRE_VIRTUALENV="" pip3 "$@"
-}
-
 #########################
 ### VIRTUALENVWRAPPER ###
 #########################
 
 export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh
+
+
+# export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+# export PIP_VIRTUALENV_BASE=$WORKON_HOME
+# export PIP_RESPECT_VIRTUALENV=true
+
+# if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
+#     source /usr/local/bin/virtualenvwrapper.sh
+# else
+#     echo "WARNING: Can't find virtualenvwrapper.sh"
+# fi
+
+# pip should only run if there is a virtualenv currently activated
+# export PIP_REQUIRE_VIRTUALENV=false
+
+# create commands to override pip restriction.
+# use `gpip` or `gpip3` to force installation of
+# a package in the global python environment
+# gpip(){
+#    PIP_REQUIRE_VIRTUALENV="" pip "$@"
+# }
+# gpip3(){
+#    PIP_REQUIRE_VIRTUALENV="" pip3 "$@"
+# }
 
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 export VIRTUAL_ENV_DISABLE_PROMPT=0
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
-# Dotfiles (Bare Repository)
-alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
-
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
 # load virtualenvwrapper for python (after custom PATHs)
-venvwrap="virtualenvwrapper.sh"
-/usr/bin/which -s $venvwrap
-if [ $? -eq 0 ]; then
-    venvwrap=`/usr/bin/which $venvwrap`
-    source $venvwrap
-fi
+# venvwrap="virtualenvwrapper.sh"
+# /usr/bin/which -s $venvwrap
+# if [ $? -eq 0 ]; then
+#     venvwrap=`/usr/bin/which $venvwrap`
+#     source $venvwrap
+# fi
 
 # LOCALE
 export LC_ALL=en_US.UTF-8
