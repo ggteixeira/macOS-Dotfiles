@@ -71,6 +71,10 @@ set mouse=a
 " Show line numbers on the left
 set number
 
+" Cursor customizations
+set cursorline
+
+
 " =====================================================
 " INDENTATION options
 " =====================================================
