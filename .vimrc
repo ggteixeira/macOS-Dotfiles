@@ -82,7 +82,7 @@ set noswapfile
 
 " Column limit
 set colorcolumn=79
-highlight ColorColumn ctermbg=235 guibg=green
+highlight ColorColumn ctermbg=7 guibg=green
 
 " =====================================================
 " INDENTATION options
@@ -122,6 +122,7 @@ inoremap <S-Tab> <C-d>
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+
 call vundle#begin()
 
 " plugin manager
