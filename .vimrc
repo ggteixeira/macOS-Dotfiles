@@ -1,7 +1,7 @@
 " My Vimrc
 " URL: https://github.com/guiemi/mac-dotfiles/blob/master/.vimrc
 " Auhor: Guilherme Teixeira
-" Description: My personal VIMRC, built along the years in order to fulfull my
+" Description: My personal VIMRC, built along the years in order to fulfill my
 " needs. 
 
 " =====================================================
