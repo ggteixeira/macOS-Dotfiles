@@ -37,6 +37,9 @@ colorscheme industry
 " Highlight searches
 set hlsearch
 
+" Disable error bells if you reach the end of the line
+set noerrorbells
+
 " =====================================================
 " USABILITY options
 " =====================================================
@@ -74,6 +77,12 @@ set number
 " Cursor customizations
 set cursorline
 
+" Disables creating swap files
+set noswapfile
+
+" Column limit
+set colorcolumn=79
+highlight ColorColumn ctermbg=235 guibg=green
 
 " =====================================================
 " INDENTATION options
