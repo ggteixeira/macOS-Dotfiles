@@ -32,7 +32,6 @@ set hidden
 set showcmd
 
 " Set colorscheme
-colorscheme industry
 
 " Highlight searches
 set hlsearch
@@ -76,8 +75,8 @@ set number
 
 " Cursor customizations
 set cursorline
-hi CursorLineNR cterm=NONE ctermbg=darkgrey ctermfg=NONE guibg=darkred guifg=white
-hi CursorLine cterm=NONE ctermbg=darkgrey ctermfg=NONE guibg=darkred guifg=white
+hi CursorLineNR cterm=NONE ctermbg=234 ctermfg=NONE guibg=darkred guifg=white
+hi CursorLine cterm=NONE ctermbg=234 ctermfg=NONE guibg=darkred guifg=white
 
 " Disables creating swap files
 set noswapfile
@@ -143,14 +142,18 @@ Plugin 'dense-analysis/ale'
 "" Status bar on bottom (Powerline/Airline)
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-let g:airline_theme='distinguished'
-let g:airline_powerline_fonts = 1
+let g:airline_theme='nord'
+" let g:airline_powerline_fonts = 1
 
 " NERDTree
 Plugin 'preservim/nerdtree'
 
 nmap <C-n> :NERDTreeToggle<CR>
 
+" Color Scheme
+Plugin 'arcticicestudio/nord-vim'
+set termguicolors
+colorscheme nord 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
