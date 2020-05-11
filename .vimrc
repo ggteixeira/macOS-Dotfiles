@@ -76,13 +76,15 @@ set number
 
 " Cursor customizations
 set cursorline
+hi CursorLineNR cterm=NONE ctermbg=darkgrey ctermfg=NONE guibg=darkred guifg=white
+hi CursorLine cterm=NONE ctermbg=darkgrey ctermfg=NONE guibg=darkred guifg=white
 
 " Disables creating swap files
 set noswapfile
 
 " Column limit
-set colorcolumn=79
-highlight ColorColumn ctermbg=7 guibg=green
+" set colorcolumn=79
+" hi ColorColumn ctermbg=darkblue guibg=green
 
 " =====================================================
 " INDENTATION options
