@@ -83,8 +83,8 @@ hi CursorLine cterm=NONE ctermbg=darkgrey ctermfg=NONE guibg=darkred guifg=white
 set noswapfile
 
 " Column limit
-" set colorcolumn=79
-" hi ColorColumn ctermbg=darkblue guibg=green
+set colorcolumn=79
+hi ColorColumn ctermbg=darkgrey guibg=green
 
 " =====================================================
 " INDENTATION options
@@ -143,7 +143,7 @@ Plugin 'dense-analysis/ale'
 "" Status bar on bottom (Powerline/Airline)
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-let g:airline_theme='base16_adwaita'
+let g:airline_theme='distinguished'
 let g:airline_powerline_fonts = 1
 
 " NERDTree
