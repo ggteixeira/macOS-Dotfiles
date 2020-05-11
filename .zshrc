@@ -36,6 +36,7 @@ alias power='vim .p10k.zsh'
 alias vimrc='vim ~/.vimrc'
 alias zshrc="vim ~/.zshrc"
 alias workoff='deactivate'
+alias gotovimcolors='cd /usr/share/vim/vim*/colors'
 
 # Dotfiles aliases (Bare Repository)
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
