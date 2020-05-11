@@ -147,6 +147,8 @@ let g:airline_theme='nord'
 
 " NERDTree
 Plugin 'preservim/nerdtree'
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
 
 nmap <C-n> :NERDTreeToggle<CR>
 
