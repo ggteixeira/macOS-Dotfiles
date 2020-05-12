@@ -10,14 +10,21 @@ Como o nome já sugere, dotfiles são **arquivos** que têm como característica
 
 Usuários de sistemas *Unix-like* utilizam dotfiles organizados em repositórios (como no GitHub, GitLab ou BitBucket, por exemplo) para manterem um esquema de versionamento de seus arquivos de configuração e um backup simples de ser ativado em caso de acidentes ou em máquinas novas. Outra utilidade de disponibilizar em repositórios públicos esses arquivos e screenshots é inspirar outros usuários a fazerem o mesmo e ampliar o conhecimento sobre essa técnica simples mas que poupa tempo e dor de cabeça de muitas pessoas diariamente.
 
-
-
 ## Saiba mais sobre Dotfiles
 
 Para construir este README dos meus dotfiles, me inspirei basicamente nos do Derek Taylor e nos dotfiles que eu mesmo construí, só que para o **Manjaro Linux i3wm**. No site [dotfiles.github.io](https://dotfiles.github.io/) tem uma lista enorme de outros para você se inspirar (ou simplesmente sair usando!, pois é possível usar a configuração feita por outra pessoa através de um script de [bootstrap](https://stackoverflow.com/a/1254561)).
 
 * Link para os dotfiles do Derek: https://gitlab.com/dwt1/dotfiles/tree/master.
 * Link para os meus dotfiles do Linux: https://github.com/guiemi/i3wm-dotfiles
+
+## Vim
+
+![dotfiles-vimrc](https://github.com/guiemi/mac-dotfiles/blob/master/.screenshots/dotfiles-vimrc.png)
+
+TODO: escrever uma introdução sobre o Vim
+
+
+
 
 ## Localização de cada arquivo de configuração
 
