@@ -24,9 +24,13 @@ O Vim (acrônimo de Vi Improved) é um editor de texto keyboard-driven lançado 
 
 ## iTerm
 
+### Tema: Broadcast
+
 ![iterm-broadcast-theme](https://github.com/guiemi/mac-dotfiles/blob/master/.screenshots/dotfiles-broadcast-theme-iterm.png)
 
-* Tema: broadcast
+## Visual Studio Code (VSCode)
+
+![](https://github.com/guiemi/mac-dotfiles/blob/master/.screenshots/dotfiles-vscode.png)
 
 
 ## Localização de cada arquivo de configuração
