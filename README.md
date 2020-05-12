@@ -1,8 +1,7 @@
 # macOS Dotfiles
+(Se você está procurando os dotfiles do meu Manjaro i3 Community Edition, eles estão [aqui](https://github.com/guiemi/i3wm-dotfiles).)
 
 ![](https://raw.githubusercontent.com/guiemi/mac-dotfiles/master/.screenshots/dotfiles-screenshot.png)
-
-(Se você está procurando os dotfiles do meu Manjaro i3 Community Edition, eles estão [aqui](https://github.com/guiemi/i3wm-dotfiles).)
 
 ## O que são Dotfiles?
 
@@ -21,9 +20,13 @@ Para construir este README dos meus dotfiles, me inspirei basicamente nos do Der
 
 ![dotfiles-vimrc](https://github.com/guiemi/mac-dotfiles/blob/master/.screenshots/dotfiles-vimrc.png)
 
-TODO: escrever uma introdução sobre o Vim
+O Vim (acrônimo de Vi Improved) é um editor de texto keyboard-driven lançado em 1992 como um fork do Vi (acrônimo de Visual Interface). 
 
+## iTerm
 
+![iterm-broadcast-theme](https://github.com/guiemi/mac-dotfiles/blob/master/.screenshots/dotfiles-broadcast-theme-iterm.png)
+
+* Tema: broadcast
 
 
 ## Localização de cada arquivo de configuração
