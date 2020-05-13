@@ -1,7 +1,7 @@
 # macOS Dotfiles
 (Se você está procurando os dotfiles do meu Manjaro i3 Community Edition, eles estão [aqui](https://github.com/guiemi/i3wm-dotfiles).)
 
-![](https://raw.githubusercontent.com/guiemi/mac-dotfiles/master/.screenshots/dotfiles-screenshot.png)
+![](https://raw.githubusercontent.com/guiemi/mac-dotfiles/master/.screenshots/dotfiles-iterm.png)
 
 ## O que são Dotfiles?
 
@@ -26,11 +26,21 @@ O Vim (acrônimo de Vi Improved) é um editor de texto keyboard-driven lançado 
 
 ### Tema: Broadcast
 
-![iterm-broadcast-theme](https://github.com/guiemi/mac-dotfiles/blob/master/.screenshots/dotfiles-broadcast-theme-iterm.png)
+![iterm-broadcast-theme](https://github.com/guiemi/mac-dotfiles/blob/master/.screenshots/dotfiles-nord-theme-iterm.png)
 
 ## Visual Studio Code (VSCode)
 
 ![](https://github.com/guiemi/mac-dotfiles/blob/master/.screenshots/dotfiles-vscode.png)
+
+* Tema: [Plastic](https://marketplace.visualstudio.com/items?itemName=will-stone.plastic)
+* Keymaps:
+* Enhancement para HTML e CSS:
+* Colorizador de parênteses:
+* Terminal interno:
+* Mostrador de cores em códigos de cores:
+* Pacote de idioma:
+* Plugin para Python:
+* Pacote de ícones
 
 
 ## Localização de cada arquivo de configuração
