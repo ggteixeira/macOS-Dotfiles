@@ -24,7 +24,7 @@ O Vim (acrônimo de Vi Improved) é um editor de texto keyboard-driven lançado 
 
 ## iTerm 2 + [Nord theme](https://github.com/arcticicestudio/nord-iterm2)
 
-![iterm-broadcast-theme](https://github.com/guiemi/mac-dotfiles/blob/master/.screenshots/dotfiles-broadcast-theme-iterm.png)
+![iterm-nord-theme](https://github.com/guiemi/mac-dotfiles/blob/master/.screenshots/dotfiles-nord-theme-iterm.png)
 
 O iTerm2 é um emulador de terminal para macOS. Ele pode ser baixado através [deste link](https://www.iterm2.com/downloads.html).
 
