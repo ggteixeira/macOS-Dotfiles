@@ -1,7 +1,7 @@
 # macOS Dotfiles
 (Se você está procurando os dotfiles do meu Manjaro i3 Community Edition, eles estão [aqui](https://github.com/guiemi/i3wm-dotfiles).)
 
-![](https://raw.githubusercontent.com/guiemi/mac-dotfiles/master/.screenshots/dotfiles-iterm.png)
+![](https://raw.githubusercontent.com/guiemi/mac-dotfiles/master/.screenshots/dotfiles-screenshot.png)
 
 ## O que são Dotfiles?
 
@@ -22,25 +22,25 @@ Para construir este README dos meus dotfiles, me inspirei basicamente nos do Der
 
 O Vim (acrônimo de Vi Improved) é um editor de texto keyboard-driven lançado em 1992 como um fork do Vi (acrônimo de Visual Interface). 
 
-## iTerm
+## iTerm 2 + [Nord theme](https://github.com/arcticicestudio/nord-iterm2)
 
-### Tema: Broadcast
+![iterm-broadcast-theme](https://github.com/guiemi/mac-dotfiles/blob/master/.screenshots/dotfiles-broadcast-theme-iterm.png)
 
-![iterm-broadcast-theme](https://github.com/guiemi/mac-dotfiles/blob/master/.screenshots/dotfiles-nord-theme-iterm.png)
+O iTerm2 é um emulador de terminal para macOS. Ele pode ser baixado através [deste link](https://www.iterm2.com/downloads.html).
 
 ## Visual Studio Code (VSCode)
 
 ![](https://github.com/guiemi/mac-dotfiles/blob/master/.screenshots/dotfiles-vscode.png)
 
+O Visual Studio Code é um dos editores de texto mais populares atualmente.
+
 * Tema: [Plastic](https://marketplace.visualstudio.com/items?itemName=will-stone.plastic)
-* Keymaps:
-* Enhancement para HTML e CSS:
-* Colorizador de parênteses:
-* Terminal interno:
-* Mostrador de cores em códigos de cores:
-* Pacote de idioma:
-* Plugin para Python:
-* Pacote de ícones
+* Keymaps: [Atom Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings) e [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+* Enhancement para HTML e CSS: [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
+* Colorizador de parênteses: [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+* Terminal interno: [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
+* Mostrador de cores em códigos de cores: [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+* Plugin para Python: [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 
 ## Localização de cada arquivo de configuração
