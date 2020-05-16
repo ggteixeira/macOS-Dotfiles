@@ -11,78 +11,58 @@
 " Avoid unexpected things that the OS may have made:
 set nocompatible
 
-"
 filetype indent plugin on
 
-" Syntax highlighting
-syntax on
+syntax on " Syntax highlighting
 
+set clipboard=unnamed " Copy to clipboard
 
-" Copy to clipboard
-set clipboard=unnamed
 
 "" =====================================================
 " MUST HAVE options 
 " =====================================================
 
-" Managing multiple instances of Vim
-set hidden
+set hidden " Managing multiple instances of Vim
 
-" Show partial commands in the last line of the screen
-set showcmd
+set showcmd " Show partial commands in the last line of the screen
 
-" Set colorscheme
+set hlsearch " Highlight searches
 
-" Highlight searches
-set hlsearch
+set noerrorbells " Disable error bells if you reach the end of the line
 
-" Disable error bells if you reach the end of the line
-set noerrorbells
 
 " =====================================================
 " USABILITY options
 " =====================================================
-" Allow backspacing over autoindent, line breaks and start of insert action
-set backspace=indent,eol,start
 
-" Keeps the same indent as the line you're currently on
-set autoindent
+set backspace=indent,eol,start " Allow backspacing over autoindent, line breaks and start of insert action
 
- " Display the cursor position on the last line of the screen or in the status line of a window
-set ruler
+set autoindent " Keeps the same indent as the line you're currently on
 
-" Use case insensitive search, execpt when using capital letters
-set ignorecase
-" set smartcase
+set ruler " Display the cursor position on the last line of the screen or in the status line of a window
 
-" Stop certain movements from always going to the first character of a line.
-" While this behaviour deviates from that of Vi, it does what most users
-" coming from other editors would expect.
-set nostartofline
+set ignorecase " Use case insensitive search, execpt when using capital letters
 
-" Always display the status line, even if only one window is displayed
-set laststatus=2
+set smartcase " set smartcase
 
-" Instead of failing a command because of unsaved changes, instead raise a
-" dialogue asking if you wish to save changed files.
-set confirm
+set nostartofline " Stop certain movements from always going to the first character of a line.
 
-" Enable use of mouse for all modes
-set mouse=a
+set laststatus=2 " Always display the status line, even if only one window is displayed
 
-" Show line numbers on the left
-set number
+set confirm " Raise a dialogue asking if you wish to save changed files.
 
-" Cursor customizations
-set cursorline
+set mouse=a " Enable use of mouse for all modes
+
+set number " Show line numbers on the left
+
+set cursorline " Cursor customizations
 hi CursorLineNR cterm=NONE ctermbg=234 ctermfg=NONE guibg=darkred guifg=white
 hi CursorLine cterm=NONE ctermbg=234 ctermfg=NONE guibg=darkred guifg=white
 
-" Disables creating swap files
-set noswapfile
+set noswapfile " Disables creating swap files
 
-" Column limit
-set colorcolumn=79
+
+set colorcolumn=79 " Column limit
 hi ColorColumn ctermbg=darkgrey guibg=green
 
 " =====================================================
@@ -102,8 +82,7 @@ set showmatch
 set enc=utf-8
 set incsearch
 
-" Better command-line completion
-set wildmenu
+set wildmenu " Better command-line completion
 
 " =====================================================
 " MAPPINGS
@@ -118,30 +97,29 @@ nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
 
 " =====================================================
-" VUNDLE settings
+" VUNDLE plugins
 " =====================================================
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim " set the runtime path to include Vundle and initialize
 
 call vundle#begin()
 
-" plugin manager
-Plugin 'VundleVim/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim' " plugin manager
+Plugin 'jiangmiao/auto-pairs' " Autopair
+Plugin 'dense-analysis/ale' " Linter (ALE)
+Plugin 'vim-airline/vim-airline' "" Status bar on bottom (Powerline/Airline)
+Plugin 'vim-airline/vim-airline-themes' " Airline themes
+Plugin 'preservim/nerdtree'
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'vim-python/python-syntax'
+" Plugin 'davidhalter/jedi-vim' " Autocomplete (Jedi)
 
-" Autopair
-Plugin 'jiangmiao/auto-pairs'
-
-" Autocomplete (Jedi)
-" Plugin 'davidhalter/jedi-vim'
-
-" Linter (ALE)
-Plugin 'dense-analysis/ale'
+call vundle#end()
 
 
-"" Status bar on bottom (Powerline/Airline)
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+" =====================================================
+" VUNDLE settings
+" =====================================================
+""" Airline settings
 let g:airline_theme='nord'
 let g:airline_powerline_fonts = 1
 
@@ -149,51 +127,33 @@ if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 
-
 let g:airline_toggle_whitespace=0
 let g:airline#extensions#whitespace#enabled = 0
 
-" NERDTree
-Plugin 'preservim/nerdtree'
+
+""" NERDTree settings
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
-
 nmap <C-n> :NERDTreeToggle<CR>
 
-" Color Scheme
-Plugin 'arcticicestudio/nord-vim'
+
+""" Color scheme settings
 set termguicolors
-colorscheme nord 
+colorscheme nord
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
 
-" =====================================================
-" PYTHON settings
-" =====================================================
-
-" Python-Syntax
-Plugin 'vim-python/python-syntax'
-
+""" Python syntax settings
 let g:python_highlight_all = 1 
 let g:python_highlight_string_formatting = 1
 let g:Python3Syntax = 1
 let g:pymode_python = 'python3'
 
 
-" =====================================================
-" START Powerline settings
-" =====================================================
-
-" Set font
-set guifont=Hack:h30
-
-let g:Powerline_symbols = 'fancy'
-
-" Set encoding
-set encoding=utf-8
-
-set t_Co=256
+""" Vim Airline settings
+set guifont=Hack:h30 " Set font
+let g:Powerline_symbols = 'fancy'  " Powerline Symbols
+set encoding=utf-8  " Set encoding
+set t_Co=256  " Color set
 set fillchars+=stl:\ ,stlnc:\
 set term=xterm-256color
 set termencoding=utf-8
@@ -204,12 +164,9 @@ if has("gui_running")
         set guifont=Inconsolata-dz\ for\ Powerline:h15
     endif
 endif
-""""""""""""""""" END of PowerLine Settings  
 
-" =====================================================
-" VIRTUALENV
-" =====================================================
 
+""" Virtualenv settings
 if has('python')
 py << EOF
 import os
