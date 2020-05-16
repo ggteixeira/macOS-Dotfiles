@@ -53,14 +53,14 @@ set confirm " Raise a dialogue asking if you wish to save changed files.
 
 set mouse=a " Enable use of mouse for all modes
 
-set number " Show line numbers on the left
+set number " Show line numbers
+set relativenumber " Show line numbers relatively 
 
 set cursorline " Cursor customizations
 hi CursorLineNR cterm=NONE ctermbg=234 ctermfg=NONE guibg=darkred guifg=white
 hi CursorLine cterm=NONE ctermbg=234 ctermfg=NONE guibg=darkred guifg=white
 
 set noswapfile " Disables creating swap files
-
 
 set colorcolumn=79 " Column limit
 hi ColorColumn ctermbg=darkgrey guibg=green
@@ -95,6 +95,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <S-Tab> << 
 inoremap <S-Tab> <C-d>
+
 
 " =====================================================
 " VUNDLE plugins
