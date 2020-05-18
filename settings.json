@@ -41,7 +41,7 @@
     "workbench.statusBar.feedback.visible": false,
     "editor.fontFamily": "Hack",
     "python.autoComplete.addBrackets": true,
-    "python.formatting.provider": "autopep8",
+    "python.formatting.provider": "black",
     "editor.autoIndent": true,
     "bracketPairColorizer.consecutivePairColors": [
         "()",
@@ -82,11 +82,11 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.jediEnabled": false,
-    "vsicons.dontShowNewVersionMessage": true,
     "editor.fontLigatures": true,
     "debug.console.fontFamily": "Hack",
     "code-runner.ignoreSelection": true,
     "files.autoSave": "onFocusChange",
     "terminal.integrated.fontFamily": "'Source Code Pro for Powerline', 'Hack Nerd Font'",
     "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.linting.pylamaEnabled": true
 }
