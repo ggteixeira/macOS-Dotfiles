@@ -135,15 +135,17 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=4'
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # completion
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 
-autoload -Uz compinit
+    autoload -Uz compinit
+fi
 
 for dump in ~/.zcompdump(N.mh+24); do
     compinit
 done
 
 compinit -C
-
 zstyle ':completion:*' menu yes select
 
 if [[ "${terminfo[kcbt]}" != "" ]]; then
