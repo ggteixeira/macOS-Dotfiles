@@ -3,13 +3,19 @@
 
 ![](https://github.com/guiemi/mac-dotfiles/blob/master/.screenshots/dotfiles-iterm.png)
 
-## O que são Dotfiles?
+## O que são Dotfiles e por que eles são importantes?
 
 Como o nome já sugere, dotfiles são **arquivos** que têm como característica principal serem precedidos por um ponto  (**dot** em inglês) em seus nomes. O ponto faz com que esses arquivos fiquem escondidos, evitando, assim, alterações ou exclusões acidentais. Outra característica deles é que eles geralmente são criados na pasta **home** do seu sistema de arquivos. O `.bashrc` é certamente o dotfile mais popular atualmente, pois ele é responsável pelas configurações do Bash (*Bourne-again shell*).
 
 Usuários de sistemas *Unix-like* utilizam dotfiles organizados em repositórios (como no GitHub, GitLab ou BitBucket) para manterem um esquema de versionamento de seus arquivos de configuração e um backup simples de ser ativado em caso de acidentes ou em máquinas novas. Outra utilidade de disponibilizar em repositórios públicos esses arquivos e screenshots é inspirar outros usuários a fazerem o mesmo e ampliar o conhecimento sobre essa técnica simples mas que poupa tempo e dor de cabeça.
 
 Uma terceira utilidade seria majoritariamente estética, já que, nessa toada de personalização de configurações, existe um nicho de usuários que gostam de mostrar as personalizações feitas nos temas de seus terminais, editores de texto, *desktop environments*. Nas comunidades [r/vimporn](r/vimporn) e [r/unixporn](r/unixporn), em vez de conteúdo *NSFW*, você encontrará screenshots de usuários orgulhosos de terem transformado seu Vim e seu *desktop environment* em verdadeiras obras de arte. Se quiser saber mais sobre esse tópico -- denominado ricing --, tem este texto [aqui](https://medium.com/blacktech/introdu%C3%A7%C3%A3o-ao-ricing-60243fab4275), postado no Medium, escrito em português.
+
+## Gerenciando dotfiles através do Git
+
+### Bare repositories
+
+### GitHub
 
 ## Saiba mais sobre Dotfiles
 
