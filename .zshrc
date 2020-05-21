@@ -9,6 +9,9 @@ fi
 
 AUTO_MENU=1
 
+# Ativa o case insensitive
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
