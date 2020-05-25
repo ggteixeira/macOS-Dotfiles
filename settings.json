@@ -60,7 +60,7 @@
     "workbench.startupEditor": "newUntitledFile",
     "terminal.integrated.rendererType": "dom",
     "color-highlight.markerType": "dot-after",
-    "workbench.colorTheme": "Plastic - deprioritised punctuation",
+    "workbench.colorTheme": "Plastic Legacy v2",
     "terminal.external.linuxExec": "iTerm",
     "breadcrumbs.enabled": true,
     "editor.renderControlCharacters": true,
@@ -89,5 +89,6 @@
     "terminal.integrated.fontFamily": "'Source Code Pro for Powerline', 'Hack Nerd Font'",
     "python.terminal.activateEnvInCurrentTerminal": true,
     "python.linting.pylamaEnabled": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "workbench.iconTheme": "vscode-great-icons"
 }
