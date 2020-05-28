@@ -39,6 +39,9 @@ alias vimrc='vim ~/.vimrc'
 alias zshrc="vim ~/.zshrc"
 alias workoff='deactivate'
 alias gotovimcolors='cd /usr/share/vim/vim*/colors'
+alias github='cd ~/github'
+alias -s md=typora  # Markdown files
+alias weather='curl http://wttr.in/'
 
 # Dotfiles aliases (Bare Repository)
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
@@ -156,3 +159,4 @@ if [[ "${terminfo[kcbt]}" != "" ]]; then
 fi
 
 # zprof # bottom of .zshrc
+export PATH="/usr/local/opt/ruby/bin:$PATH"
