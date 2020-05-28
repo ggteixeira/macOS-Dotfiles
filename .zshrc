@@ -42,6 +42,7 @@ alias gotovimcolors='cd /usr/share/vim/vim*/colors'
 alias github='cd ~/github'
 alias -s md=typora  # Markdown files
 alias weather='curl http://wttr.in/'
+alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 
 # Dotfiles aliases (Bare Repository)
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
