@@ -42,7 +42,7 @@ alias gotovimcolors='cd /usr/share/vim/vim*/colors'
 alias github='cd ~/github'
 alias -s md=typora  # Markdown files
 alias weather='curl http://wttr.in/'
-alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
+alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
 
 # Dotfiles aliases (Bare Repository)
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
@@ -61,6 +61,7 @@ alias gp='git push'
 alias gpom="git push origin master"
 alias grmc='git rm --cached'
 alias gst='git status'
+alias please='sudo'
 
 #########################
 ### VIRTUALENVWRAPPER ###
@@ -161,3 +162,6 @@ fi
 
 # zprof # bottom of .zshrc
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+# Brew
+export PATH="/usr/local/sbin:$PATH"
