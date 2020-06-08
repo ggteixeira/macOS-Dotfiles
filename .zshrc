@@ -43,6 +43,8 @@ alias github='cd ~/github'
 alias -s md=typora  # Markdown files
 alias weather='curl http://wttr.in/'
 alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
+alias ls='ls -G'
+alias ll='ls -lG'
 
 # Dotfiles aliases (Bare Repository)
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
@@ -165,3 +167,4 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 # Brew
 export PATH="/usr/local/sbin:$PATH"
+
