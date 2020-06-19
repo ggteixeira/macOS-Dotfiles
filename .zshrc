@@ -138,6 +138,7 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 
 # zsh-autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+bindkey 'L' autosuggest-accept
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=4'
 
