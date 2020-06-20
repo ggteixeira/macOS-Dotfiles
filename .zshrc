@@ -140,7 +140,7 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey 'L' autosuggest-accept
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=4'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=246'
 
 # powerlevel10k (Theme)
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
