@@ -65,6 +65,10 @@ alias grmc='git rm --cached'
 alias gst='git status'
 alias please='sudo'
 
+# Python aliases:
+
+alias pipi='pip install --upgrade pip && pip install -r requirements.txt && pip freeze — local | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U && pip freeze > requirements.txt && git add requirements.txt && git commit -m "Atualiza pacotes" && git push'
+
 #########################
 ### VIRTUALENVWRAPPER ###
 #########################
