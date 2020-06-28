@@ -31,8 +31,11 @@ export TERM="xterm-256color"
 ###############
 
 # General aliases
-alias grep='grep --color=auto'
 alias ..='cd ..'
+alias ...='cd .. && cd ..'
+alias ....='cd .. && cd .. && cd ..'
+alias .....='cd .. && cd .. && cd .. && ..'
+alias grep='grep --color=auto'
 alias li='ls -l'
 alias power='vim .p10k.zsh'
 alias vimrc='vim ~/.vimrc'
