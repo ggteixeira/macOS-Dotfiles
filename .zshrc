@@ -176,3 +176,8 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 # Brew
 export PATH="/usr/local/sbin:$PATH"
 
+# Pyenv
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
