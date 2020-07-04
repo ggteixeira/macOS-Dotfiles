@@ -57,17 +57,17 @@
     "update.channel": "none",
     "explorer.confirmDragAndDrop": false,
     "window.menuBarVisibility": "toggle",
-    "workbench.startupEditor": "newUntitledFile",
+    "workbench.startupEditor": "welcomePage",
     "terminal.integrated.rendererType": "dom",
     "color-highlight.markerType": "dot-after",
-    "workbench.colorTheme": "Plastic Legacy v2",
+    "workbench.colorTheme": "Plastic",
     "terminal.external.linuxExec": "iTerm",
     "breadcrumbs.enabled": true,
     "editor.renderControlCharacters": true,
     "editor.renderWhitespace": "none",
     "editor.fontSize": 13,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "python.pythonPath": "/Users/guiemi/.virtualenvs/rn1kenv/bin/python",
+    "python.pythonPath": "/Users/guiemi/.pyenv/shims/python",
     "python.venvPath": "/Users/guiemi/.virtualenvs/",
     "explorer.confirmDelete": false,
     "terminal.integrated.cursorStyle": "line",
@@ -89,6 +89,13 @@
     "terminal.integrated.fontFamily": "'Source Code Pro for Powerline', 'Hack Nerd Font'",
     "python.terminal.activateEnvInCurrentTerminal": true,
     "python.linting.pylamaEnabled": true,
-    "editor.formatOnSave": true,
-    "workbench.iconTheme": "vscode-great-icons"
+    "workbench.iconTheme": "vscode-great-icons",
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "editor.wordBasedSuggestions": false,
+    "editor.accessibilitySupport": "off"
 }
