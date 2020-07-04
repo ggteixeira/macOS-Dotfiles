@@ -157,7 +157,7 @@ let g:Powerline_symbols = 'fancy'  " Powerline Symbols
 set encoding=utf-8  " Set encoding
 set t_Co=256  " Color set
 set fillchars+=stl:\ ,stlnc:\
-set term=xterm-256color
+" set cterm=xterm-256color
 set termencoding=utf-8
 
 if has("gui_running")
@@ -178,4 +178,9 @@ if 'VIRTUAL_ENV' in os.environ:
   activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
   execfile(activate_this, dict(__file__=activate_this))
 EOF
+endif
+
+""" Neovim (nvim) compatibility:
+if has('nvim')
+    tnoremap <Esc> <C-\><C-n>
 endif
