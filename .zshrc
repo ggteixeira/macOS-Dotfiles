@@ -38,7 +38,7 @@ alias .....='cd .. && cd .. && cd .. && ..'
 alias grep='grep --color=auto'
 alias li='ls -l'
 alias power='vim .p10k.zsh'
-alias vimrc='vim ~/.vimrc'
+alias vimrc='nvim ~/.vimrc'
 alias zshrc="vim ~/.zshrc"
 alias workoff='deactivate'
 alias gotovimcolors='cd /usr/share/vim/vim*/colors'
@@ -177,7 +177,7 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 
 # Pyenv
-
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc  # Ensures pyenv can be used when and where necessary, now and ongoing in development needs 
