@@ -13,4 +13,4 @@
 	process = git-lfs filter-process
 	required = true
 [core]
-	editor = /usr/bin/vim
+	editor = /usr/local/bin/nvim
