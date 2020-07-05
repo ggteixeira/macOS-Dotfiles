@@ -31,6 +31,7 @@ export TERM="xterm-256color"
 ###############
 
 # General aliases
+alias vim='nvim'
 alias ..='cd ..'
 alias ...='cd .. && cd ..'
 alias ....='cd .. && cd .. && cd ..'
@@ -145,7 +146,7 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 
 # zsh-autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-bindkey 'L' autosuggest-accept
+# bindkey 'L' autosuggest-accept
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=246'
 
@@ -180,4 +181,10 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc  # Ensures pyenv can be used when and where necessary, now and ongoing in development needs 
+
+# Ensures pyenv can be used when and where necessary, now and ongoing in development needs 
+# if command -v pyenv 1>/dev/null 2>&1; then
+#     eval "$(pyenv init -)"
+# fi
+
+
