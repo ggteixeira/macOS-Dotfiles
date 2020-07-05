@@ -187,4 +187,7 @@ eval "$(pyenv virtualenv-init -)"
 #     eval "$(pyenv init -)"
 # fi
 
+export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+export WORKON_HOME=$HOME/.virtualenvs
+pyenv virtualenvwrapper_lazy
 
