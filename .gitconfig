@@ -1,6 +1,6 @@
 [user]
 	email = guiemi.teixeira@gmail.com
-	name = guiemi
+	name = Guilherme
 [alias]
 	l = "log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
     st = status
@@ -13,4 +13,4 @@
 	process = git-lfs filter-process
 	required = true
 [core]
-	editor = /usr/local/bin/nvim
+	editor = /usr/local/bin/vim

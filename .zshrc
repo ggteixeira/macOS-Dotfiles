@@ -31,7 +31,7 @@ export TERM="xterm-256color"
 ###############
 
 # General aliases
-alias vim='nvim'
+# alias vim='nvim'
 alias ..='cd ..'
 alias ...='cd .. && cd ..'
 alias ....='cd .. && cd .. && cd ..'

@@ -79,7 +79,7 @@ set expandtab
 " =====================================================
 " OTHER options
 " =====================================================
-" set t_Co=256
+set t_Co=256
 set showmatch
 set enc=utf-8
 set incsearch
@@ -101,9 +101,11 @@ inoremap <A-backspace> <C-w>
 
 autocmd FileType python map <buffer> <F8> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+
 " =====================================================
 " VUNDLE plugins
 " =====================================================
+
 set rtp+=~/.vim/bundle/Vundle.vim " set the runtime path to include Vundle and initialize
 
 call vundle#begin()
@@ -119,6 +121,15 @@ Plugin 'vim-python/python-syntax'
 " Plugin 'davidhalter/jedi-vim' " Autocomplete (Jedi)
 
 call vundle#end()
+
+
+" =====================================================
+" THEMES 
+" =====================================================
+
+Plugin 'dracula/vim', { 'name': 'dracula' }
+Plugin 'sonph/onehalf', {'rtp': 'vim/'}
+
 
 
 " =====================================================
@@ -146,7 +157,6 @@ nmap <C-n> :NERDTreeToggle<CR>
 set termguicolors
 colorscheme nord
 
-
 """ Python syntax settings
 let g:python_highlight_all = 1 
 let g:python_highlight_string_formatting = 1
@@ -158,7 +168,6 @@ let g:pymode_python = 'python3'
 set guifont=Hack:h30 " Set font
 let g:Powerline_symbols = 'fancy'  " Powerline Symbols
 set encoding=utf-8  " Set encoding
-" set t_Co=256  " Color set
 set fillchars+=stl:\ ,stlnc:\
 " set cterm=xterm-256color
 set termencoding=utf-8
