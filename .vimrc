@@ -28,6 +28,8 @@ set showcmd " Show partial commands in the last line of the screen
 
 set hlsearch " Highlight searches
 
+set incsearch " Highlight search when entering a pattern
+
 set noerrorbells " Disable error bells if you reach the end of the line
 
 
@@ -77,7 +79,7 @@ set expandtab
 " =====================================================
 " OTHER options
 " =====================================================
-set t_Co=256
+" set t_Co=256
 set showmatch
 set enc=utf-8
 set incsearch
@@ -109,7 +111,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim' " plugin manager
 Plugin 'jiangmiao/auto-pairs' " Autopair
 Plugin 'dense-analysis/ale' " Linter (ALE)
-Plugin 'vim-airline/vim-airline' "" Status bar on bottom (Powerline/Airline)
+Plugin 'vim-airline/vim-airline' " Status bar on bottom (Powerline/Airline)
 Plugin 'vim-airline/vim-airline-themes' " Airline themes
 Plugin 'preservim/nerdtree'
 Plugin 'arcticicestudio/nord-vim'
@@ -156,7 +158,7 @@ let g:pymode_python = 'python3'
 set guifont=Hack:h30 " Set font
 let g:Powerline_symbols = 'fancy'  " Powerline Symbols
 set encoding=utf-8  " Set encoding
-set t_Co=256  " Color set
+" set t_Co=256  " Color set
 set fillchars+=stl:\ ,stlnc:\
 " set cterm=xterm-256color
 set termencoding=utf-8
@@ -167,7 +169,6 @@ if has("gui_running")
         set guifont=Inconsolata-dz\ for\ Powerline:h15
     endif
 endif
-
 
 """ Virtualenv settings
 " if has('python')
