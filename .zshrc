@@ -49,7 +49,8 @@ alias weather='curl http://wttr.in/'
 alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
 alias ls='ls -G'
 alias ll='ls -lG'
-
+alias pwdcp='pwd && pwd | tr -d '\n' | pbcopy'
+alias conjuga='cd ~/github/forks/conjugai-me && clear && ls'
 # Dotfiles aliases (Bare Repository)
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 
