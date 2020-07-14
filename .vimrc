@@ -95,9 +95,9 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-nnoremap <S-Tab> << 
+" nnoremap <S-Tab> << 
 inoremap <S-Tab> <C-d>
-inoremap <A-backspace> <C-w>
+inoremap <C-Backspace> <echo "TESTE"><jj><ESC-jj> 
 
 autocmd FileType python map <buffer> <F8> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
@@ -127,17 +127,12 @@ call vundle#end()
 " THEMES 
 " =====================================================
 
-Plugin 'dracula/vim', { 'name': 'dracula' }
-Plugin 'sonph/onehalf', {'rtp': 'vim/'}
-
-
-
 " =====================================================
 " VUNDLE settings
 " =====================================================
 """ Airline settings
 let g:airline_theme='nord'
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
