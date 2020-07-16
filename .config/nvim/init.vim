@@ -37,6 +37,11 @@ set relativenumber " Show line numbers relatively
 " C => Control | S => Shift
 " =====================================================
 
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " =====================================================
 " VIM-PLUG plugins
 " =====================================================
@@ -48,16 +53,19 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'arcticicestudio/nord-vim'
+Plug 'jiangmiao/auto-pairs'
+
 call plug#end()
 
 " =====================================================
 " VIM-PLUG settings
 " =====================================================
 
-""" NERDTree settings
+""" Nerdtree settings
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 nmap <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif  " Close Vim if only NerdTree is open
 
 """ Dracula settings
 syntax on
