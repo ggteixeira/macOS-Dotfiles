@@ -97,7 +97,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 " nnoremap <S-Tab> << 
 inoremap <S-Tab> <C-d>
-inoremap <C-Backspace> <echo "TESTE"><jj><ESC-jj> 
+" inoremap <C-Backspace> <echo TESTE><jj><ESC-jj> 
 
 autocmd FileType python map <buffer> <F8> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
@@ -146,7 +146,7 @@ let g:airline#extensions#whitespace#enabled = 0
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 nmap <C-n> :NERDTreeToggle<CR>
-
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif  " Close Vim if only NerdTree is open
 
 """ Color scheme settings
 set termguicolors
