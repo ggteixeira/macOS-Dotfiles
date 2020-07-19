@@ -55,7 +55,7 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 
 # movement aliases
 alias gotovimcolors='cd /usr/share/vim/vim*/colors'
-alias gotoreact='cd ~/github/learig-ceter/React && clear && ls'
+alias gotoreact='cd ~/github/learning-center/React && clear && ls'
 alias gotoconjuga='cd ~/github/forks/conjugai-me && clear && ls'
 
 
