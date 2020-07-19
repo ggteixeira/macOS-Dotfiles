@@ -40,10 +40,9 @@ alias grep='grep --color=auto'
 alias li='ls -l'
 alias power='vim .p10k.zsh'
 alias vimrc='vim ~/.vimrc'
-alias nvimrc='vim ~/.config/vim/init.vim'
+alias nvimrc='nvim ~/.config/nvim/init.vim'
 alias zshrc="vim ~/.zshrc"
 alias workoff='deactivate'
-alias gotovimcolors='cd /usr/share/vim/vim*/colors'
 alias github='cd ~/github'
 alias -s md=typora  # Markdown files
 alias weather='curl http://wttr.in/'
@@ -51,9 +50,14 @@ alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
 alias ls='ls -G'
 alias ll='ls -lG'
 alias pwdcp='pwd && pwd | tr -d '\n' | pbcopy'
-alias conjuga='cd ~/github/forks/conjugai-me && clear && ls'
 # Dotfiles aliases (Bare Repository)
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
+
+# movement aliases
+alias gotovimcolors='cd /usr/share/vim/vim*/colors'
+alias gotoreact='cd ~/github/learig-ceter/React && clear && ls'
+alias gotoconjuga='cd ~/github/forks/conjugai-me && clear && ls'
+
 
 # Git aliases
 alias g='git'
@@ -79,35 +83,22 @@ alias pipi='pip install --upgrade pip && pip install -r requirements.txt && pip 
 ### VIRTUALENVWRAPPER ###
 #########################
 
+# Setup virtualenv home
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh
 
+# Tell pyenv-virtualenvwrapper to use pyenv when creating new Python environments
+export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 
-# export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-# export PIP_VIRTUALENV_BASE=$WORKON_HOME
-# export PIP_RESPECT_VIRTUALENV=true
+# Set the pyenv shims to initialize
+if command -v pyenv 1>/dev/null 2>&1; then
+ eval "$(pyenv init -)"
+fi
 
-# if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
-#     source /usr/local/bin/virtualenvwrapper.sh
-# else
-#     echo "WARNING: Can't find virtualenvwrapper.sh"
-# fi
+pyenv virtualenvwrapper_lazy
 
-# pip should only run if there is a virtualenv currently activated
-# export PIP_REQUIRE_VIRTUALENV=false
-
-# create commands to override pip restriction.
-# use `gpip` or `gpip3` to force installation of
-# a package in the global python environment
-# gpip(){
-#    PIP_REQUIRE_VIRTUALENV="" pip "$@"
-# }
-# gpip3(){
-#    PIP_REQUIRE_VIRTUALENV="" pip3 "$@"
-# }
-
-VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+VIRTUALENVWRAPPER_PYTHON='/Users/guiemi/.pyenv/shims/python'
 export VIRTUAL_ENV_DISABLE_PROMPT=0
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
@@ -115,13 +106,11 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
-# load virtualenvwrapper for python (after custom PATHs)
-# venvwrap="virtualenvwrapper.sh"
-# /usr/bin/which -s $venvwrap
-# if [ $? -eq 0 ]; then
-#     venvwrap=`/usr/bin/which $venvwrap`
-#     source $venvwrap
-# fi
+#########################
+###   OTHER CONFIGS   ###
+#########################
+
+
 
 # LOCALE
 export LC_ALL=en_US.UTF-8
@@ -188,10 +177,6 @@ eval "$(pyenv virtualenv-init -)"
 # if command -v pyenv 1>/dev/null 2>&1; then
 #     eval "$(pyenv init -)"
 # fi
-
-export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
-export WORKON_HOME=$HOME/.virtualenvs
-pyenv virtualenvwrapper_lazy
 
 # Config do OpenSSL / Pyenv
 export PATH="/usr/local/opt/openssl/bin:$PATH"
