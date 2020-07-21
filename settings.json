@@ -60,7 +60,7 @@
     "workbench.startupEditor": "welcomePage",
     "terminal.integrated.rendererType": "dom",
     "color-highlight.markerType": "dot-after",
-    "workbench.colorTheme": "Plastic",
+    "workbench.colorTheme": "Dracula",
     "terminal.external.linuxExec": "iTerm",
     "breadcrumbs.enabled": true,
     "editor.renderControlCharacters": true,
@@ -97,5 +97,12 @@
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "editor.wordBasedSuggestions": false,
-    "editor.accessibilitySupport": "off"
+    "editor.accessibilitySupport": "off",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "sync.autoDownload": true,
+    "sync.autoUpload": true,
+    "window.nativeTabs": true,
 }
