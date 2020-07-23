@@ -17,6 +17,7 @@ syntax on " Syntax highlighting
 
 set clipboard=unnamed " Copy to clipboard
 
+set linebreak
 
 "" =====================================================
 " MUST HAVE options 

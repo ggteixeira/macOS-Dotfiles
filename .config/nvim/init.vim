@@ -10,6 +10,11 @@ let g:python3_host_prog = '/Users/guiemi/.pyenv/shims/python3'
 let g:python_host_prog = '/usr/bin/python2'
 set clipboard=unnamed " Copy to clipboard
 set termguicolors
+set cursorline
+set tabstop=4  "Number of tabs
+set encoding=utf-8 "Encoding
+set linebreak " Wraps lines without trimming words in the middle; breaks line instead
+
 " =====================================================
 " MUST HAVE options 
 " =====================================================
@@ -72,7 +77,6 @@ syntax on
 color dracula
 
 """ Airline settings
-
 let g:airline_powerline_fonts = 1
 let g:airline_section_warning = ''
 let g:airline_section_error = ''
