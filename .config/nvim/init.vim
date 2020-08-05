@@ -21,6 +21,7 @@ set linebreak " Wraps lines without trimming words in the middle; breaks line in
 
 set hlsearch " Highlight searches
 set incsearch " Highlight search when entering a pattern
+set showmatch
 
 " =====================================================
 " USABILITY options
