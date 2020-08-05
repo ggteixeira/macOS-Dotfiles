@@ -34,7 +34,6 @@
         "comments": false,
         "strings": false
     },
-    "editor.snippetSuggestions": "none",
     "editor.suggestOnTriggerCharacters": false,
     "editor.tabCompletion": false,
     "workbench.statusBar.feedback.visible": false,
@@ -87,7 +86,7 @@
     "python.linting.pylamaEnabled": true,
     "workbench.iconTheme": "vscode-great-icons",
     "[html]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
