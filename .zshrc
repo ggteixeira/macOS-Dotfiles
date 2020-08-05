@@ -57,6 +57,8 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 alias gotovimcolors='cd /usr/share/vim/vim*/colors'
 alias gotoreact='cd ~/github/learning-center/React && clear && ls'
 alias gotoconjuga='cd ~/github/forks/conjugai-me && clear && ls'
+alias gotoprinti='cd ~/github/projects/heroes_catalog && clear && ls'
+alias gotoalura='cd ~/github/learning-center/learning-react/languageflix && clear && ls'
 
 
 # Git aliases
@@ -80,26 +82,29 @@ alias please='sudo'
 alias pipi='pip install --upgrade pip && pip install -r requirements.txt && pip freeze — local | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U && pip freeze > requirements.txt && git add requirements.txt && git commit -m "Atualiza pacotes" && git push'
 
 #########################
-### VIRTUALENVWRAPPER ###
+### VIRTUALENV ###
 #########################
 
+# Pyenv
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
 # Setup virtualenv home
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
-source /usr/local/bin/virtualenvwrapper.sh
+# export WORKON_HOME=$HOME/.virtualenvs
+# export PROJECT_HOME=$HOME/Devel
+# source /usr/local/bin/virtualenvwrapper.sh
 
 # Tell pyenv-virtualenvwrapper to use pyenv when creating new Python environments
-export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+# export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 
 # Set the pyenv shims to initialize
 if command -v pyenv 1>/dev/null 2>&1; then
  eval "$(pyenv init -)"
 fi
 
-pyenv virtualenvwrapper_lazy
+# pyenv virtualenvwrapper_lazy
 
-VIRTUALENVWRAPPER_PYTHON='/Users/guiemi/.pyenv/shims/python'
-export VIRTUAL_ENV_DISABLE_PROMPT=0
+# VIRTUALENVWRAPPER_PYTHON='/Users/guiemi/.pyenv/shims/python'
+# export VIRTUAL_ENV_DISABLE_PROMPT=0
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
@@ -183,3 +188,5 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/openssl/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
 
+# Zsh profiler:
+# zprof
