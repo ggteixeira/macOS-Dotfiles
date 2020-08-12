@@ -97,9 +97,17 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 # export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 
 # Set the pyenv shims to initialize
-if command -v pyenv 1>/dev/null 2>&1; then
- eval "$(pyenv init -)"
+
+# if command -v pyenv 1>/dev/null 2>&1; then
+#  eval "$(pyenv init -)"
+# fi
+
+if [ -n "$(which pyenv)" ]; then
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
+  export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 fi
+
 
 # pyenv virtualenvwrapper_lazy
 
