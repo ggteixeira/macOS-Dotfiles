@@ -19,9 +19,10 @@ set linebreak " Wraps lines without trimming words in the middle; breaks line in
 " MUST HAVE options 
 " =====================================================
 
-set hlsearch " Highlight searches
 set incsearch " Highlight search when entering a pattern
+set hlsearch " Highlight searches
 set showmatch
+set inccommand=nosplit
 
 " =====================================================
 " USABILITY options
