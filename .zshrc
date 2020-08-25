@@ -57,7 +57,7 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 alias gotovimcolors='cd /usr/share/vim/vim*/colors'
 alias gotoreact='cd ~/github/learning-center/React && clear && ls'
 alias gotoconjuga='cd ~/github/forks/conjugai-me && clear && ls'
-alias gotoprinti='cd ~/github/projects/heroes_catalog && clear && ls'
+alias gotoprinti='cd ~/Printi && clear && ls'
 alias gotoalura='cd ~/github/learning-center/learning-react/languageflix && clear && ls'
 
 
@@ -71,6 +71,7 @@ alias gf='git fetch'
 alias glgg='git log --graph'
 alias glgga='git log --graph --decorate --all'
 alias glgm='git log --graph --max-count=10'
+alias glog='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
 alias gp='git push'
 alias gpom="git push origin master"
 alias grmc='git rm --cached'
