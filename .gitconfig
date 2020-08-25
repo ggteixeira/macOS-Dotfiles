@@ -1,6 +1,8 @@
-[user]
-	email = guiemi.teixeira@gmail.com
-	name = Guilherme
+[includeIf "gitdir:~/github/"]
+  	path = .gitconfig-github
+[includeIf "gitdir:~/Printi/"]
+  	path = .gitconfig-printi
+
 [alias]
 	l = "log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
     st = status
@@ -14,3 +16,9 @@
 	required = true
 [core]
 	editor = /usr/local/bin/vim
+[gpg]
+	program = gpg
+[commit]
+	gpgSign = false
+[tag]
+	forceSignAnnotated = false
