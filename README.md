@@ -1,7 +1,7 @@
 # macOS Dotfiles
-(Se você está procurando os dotfiles do meu Manjaro i3 Community Edition, eles estão [aqui](https://github.com/guiemi/i3wm-dotfiles).)
-
 ![](https://github.com/guiemi/mac-dotfiles/blob/master/.screenshots/dotfiles-iterm.png)
+
+(Se você está procurando os dotfiles do meu Manjaro i3 Community Edition, eles estão [aqui](https://github.com/guiemi/i3wm-dotfiles).)
 
 ## O que são Dotfiles e por que eles são importantes?
 
