@@ -22,3 +22,6 @@
 	gpgSign = false
 [tag]
 	forceSignAnnotated = false
+[user]
+	name = Guilherme Freitas (Printi)
+	email = guilherme.freitas@printi.com.br
