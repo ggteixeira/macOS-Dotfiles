@@ -43,7 +43,6 @@ alias vimrc='vim ~/.vimrc'
 alias nvimrc='nvim ~/.config/nvim/init.vim'
 alias zshrc="vim ~/.zshrc"
 alias workoff='deactivate'
-alias github='cd ~/github'
 alias -s md=typora  # Markdown files
 alias weather='curl http://wttr.in/'
 alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
