@@ -57,7 +57,7 @@ alias gotovimcolors='cd /usr/share/vim/vim*/colors'
 alias gotoreact='cd ~/github/learning-center/React && clear && ls'
 alias gotoconjuga='cd ~/github/forks/conjugai-me && clear && ls'
 alias gotoprinti='cd ~/Printi && clear && ls'
-alias gotoalura='cd ~/github/learning-center/learning-react/languageflix && clear && ls'
+alias gotoalura='cd'
 
 
 # Git aliases
