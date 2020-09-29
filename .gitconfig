@@ -1,4 +1,4 @@
-[includeIf "gitdir:~/github/"]
+[includeIf "gitdir:~/GitHub/"]
   	path = .gitconfig-github
 [includeIf "gitdir:~/Printi/"]
   	path = .gitconfig-printi
