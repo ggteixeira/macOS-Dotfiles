@@ -55,10 +55,10 @@
     "update.channel": "none",
     "explorer.confirmDragAndDrop": false,
     "window.menuBarVisibility": "toggle",
-    "workbench.startupEditor": "welcomePage",
+    "workbench.startupEditor": "newUntitledFile",
     "terminal.integrated.rendererType": "dom",
     "color-highlight.markerType": "dot-after",
-    "workbench.colorTheme": "Dracula",
+    "workbench.colorTheme": "One Dark Pro",
     "terminal.external.linuxExec": "iTerm",
     "breadcrumbs.enabled": true,
     "editor.renderControlCharacters": true,
@@ -114,8 +114,11 @@
     "vim.cursorStylePerMode.visual": "block-outline",
     "vim.cursorStylePerMode.visualblock": "block-outline",
     "vim.cursorStylePerMode.visualline": "block-outline",
-    "editor.lineNumbers": "relative",
     "files.autoSave": "onWindowChange",
     "eslint.alwaysShowStatus": true,
-    "typescript.disableAutomaticTypeAcquisition": true
+    "typescript.disableAutomaticTypeAcquisition": true,
+    "yaml.schemas": {
+        "file:///Users/guiemi/.vscode/extensions/atlassian.atlascode-2.3.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "liveServer.settings.donotVerifyTags": true
 }
