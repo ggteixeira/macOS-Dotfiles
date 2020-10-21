@@ -39,7 +39,8 @@ alias glgga='git log --graph --decorate --all'
 alias glgm='git log --graph --max-count=10'
 alias glog='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
 alias gp='git push'
-alias gpom="git push origin master"
+alias gpom="git push origin main"
+alias gpoma="git push origin master"
 alias grmc='git rm --cached'
 alias gst='git status'
 alias please='sudo'
@@ -84,11 +85,21 @@ source /Users/guiemi/.powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+
+#Ruby settings:
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
 # TimeZsh
 timezsh() {
   shell=${1-$SHELL}
   for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
 }
+
+# Pyenv settings
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 
 
 # Zsh profiler:
