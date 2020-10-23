@@ -9,12 +9,10 @@ ZSH_THEME="robbyrussell"
 # ALIASES
 # General aliases
 alias li='ls -l'
-alias vimrc='vim ~/.vimrc'
-alias nvimrc='nvim ~/.config/nvim/init.vim'
-alias zshrc="vim ~/.zshrc"
 alias -s md=typora  # Markdown files
 alias weather='curl http://wttr.in/'
 alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
+alias please='sudo'
 
 # Dotfiles aliases (Bare Repository)
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
@@ -25,6 +23,9 @@ alias gotoreact='cd ~/github/learning-center/React && clear && ls'
 alias gotoconjuga='cd ~/github/forks/conjugai-me && clear && ls'
 alias gotoprinti='cd ~/Printi && clear && ls'
 alias gotoalura='cd'
+alias vimrc='vim ~/.vimrc'
+alias nvimrc='nvim ~/.config/nvim/init.vim'
+alias zshrc="vim ~/.zshrc"
 
 # Git aliases
 alias g='git'
@@ -43,7 +44,6 @@ alias gpom="git push origin main"
 alias gpoma="git push origin master"
 alias grmc='git rm --cached'
 alias gst='git status'
-alias please='sudo'
 
 # Python aliases:
 alias pipi='pip install --upgrade pip && pip install -r requirements.txt && pip freeze — local | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U && pip freeze > requirements.txt && git add requirements.txt && git commit -m "Atualiza pacotes" && git push'
