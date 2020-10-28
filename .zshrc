@@ -100,7 +100,9 @@ timezsh() {
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-
+# Setting Homebew's path:
+export PATH="/usr/local/sbin:$PATH"
 
 # Zsh profiler:
 # zprof
+
