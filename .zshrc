@@ -4,7 +4,7 @@
 export ZSH="/Users/guiemi/.oh-my-zsh"
 
 
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # ALIASES
 # General aliases
@@ -80,7 +80,8 @@ compinit
 # End of lines added by compinstall
 
 # Source Powerlevel10K
-source /Users/guiemi/.powerlevel10k/powerlevel10k.zsh-theme
+# source /Users/guiemi/.powerlevel10k/powerlevel10k.zsh-theme
+source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -105,4 +106,3 @@ export PATH="/usr/local/sbin:$PATH"
 
 # Zsh profiler:
 # zprof
-
