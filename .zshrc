@@ -101,6 +101,9 @@ timezsh() {
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# Python 3.8 Settings
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+
 # Setting Homebew's path:
 export PATH="/usr/local/sbin:$PATH"
 

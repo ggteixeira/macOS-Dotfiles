@@ -61,6 +61,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'arcticicestudio/nord-vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 call plug#end()
 
