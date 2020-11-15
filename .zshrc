@@ -20,9 +20,7 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 # movement aliases
 alias gotovimcolors='cd /usr/share/vim/vim*/colors'
 alias gotoreact='cd ~/github/learning-center/React && clear && ls'
-alias gotoconjuga='cd ~/github/forks/conjugai-me && clear && ls'
 alias gotoprinti='cd ~/Printi && clear && ls'
-alias gotoalura='cd'
 alias vimrc='vim ~/.vimrc'
 alias nvimrc='nvim ~/.config/nvim/init.vim'
 alias zshrc="vim ~/.zshrc"

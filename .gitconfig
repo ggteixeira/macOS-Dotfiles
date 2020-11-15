@@ -5,9 +5,9 @@
 
 [alias]
 	l = "log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-    st = status
+	st = status
 	com = commit
-    diffcom = git diff HEAD~1
+	diffcom = git diff HEAD~1
 	git = !git
 [filter "lfs"]
 	clean = git-lfs clean -- %f
@@ -22,4 +22,3 @@
 	gpgSign = false
 [tag]
 	forceSignAnnotated = false
-
