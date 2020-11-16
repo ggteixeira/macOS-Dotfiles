@@ -140,9 +140,7 @@ endif
 
 let g:airline_toggle_whitespace=0
 let g:airline#extensions#whitespace#enabled = 0
-let g:airline_section_warning = ''
-let g:airline_section_error = ''
-
+let g:airline_skip_empty_sections = 1
 
 """ NERDTree settings
 let NERDTreeMinimalUI = 1
