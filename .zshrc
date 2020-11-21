@@ -12,6 +12,7 @@ alias li='ls -l'
 alias -s md=typora  # Markdown files
 alias weather='curl http://wttr.in/'
 alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
+alias apt='brew'
 alias please='sudo'
 
 # Dotfiles aliases (Bare Repository)
