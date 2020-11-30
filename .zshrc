@@ -47,6 +47,9 @@ alias gst='git status'
 # Python aliases:
 alias pipi='pip install --upgrade pip && pip install -r requirements.txt && pip freeze — local | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U && pip freeze > requirements.txt && git add requirements.txt && git commit -m "Atualiza pacotes" && git push'
 
+# Ruby aliases
+alias beijos='bundle exec jekyll serve'
+
 # Fastboot
 export PATH=${PATH}:/Applications/Android
 
@@ -89,6 +92,8 @@ source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 #Ruby settings:
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH=$HOME/.gem/ruby/2.7.2/bin:$PATH
 
 # TimeZsh
 timezsh() {
