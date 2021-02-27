@@ -43,6 +43,7 @@ alias gpom="git push origin main"
 alias gpoma="git push origin master"
 alias grmc='git rm --cached'
 alias gst='git status'
+alias grcignored='git rm --cached `git ls-files -i --exclude-from=.gitignore`'
 
 # Python aliases:
 alias pipi='pip install --upgrade pip && pip install -r requirements.txt && pip freeze — local | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U && pip freeze > requirements.txt && git add requirements.txt && git commit -m "Atualiza pacotes" && git push'
@@ -72,7 +73,10 @@ fi
 HISTFILE=~/.histfile
 HISTSIZE=500
 SAVEHIST=1000
-bindkey -v
+
+# vi-mode / vim-mode
+# bindkey -v
+
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/Users/guiemi/.zshrc'
