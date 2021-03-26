@@ -1,10 +1,9 @@
-# zmodload zsh/zprof # top of your .zshrc file
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/guiemi/.oh-my-zsh"
 
-
-# ZSH_THEME="powerlevel10k/powerlevel10k"
+export ZSH=$HOME/.oh-my-zsh
 
 # ALIASES
 # General aliases
@@ -51,69 +50,9 @@ alias pipi='pip install --upgrade pip && pip install -r requirements.txt && pip 
 # Ruby aliases
 alias beijos='bundle exec jekyll serve'
 
-# Fastboot
-export PATH=${PATH}:/Applications/Android
-
-plugins=(
-  git
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-)
+ZSH_THEME="powerlevel10k/powerlevel10k"
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=500
-SAVEHIST=1000
-
-# vi-mode / vim-mode
-# bindkey -v
-
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-zstyle :compinstall filename '/Users/guiemi/.zshrc'
-
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
-
-# Source Powerlevel10K
-# source /Users/guiemi/.powerlevel10k/powerlevel10k.zsh-theme
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-
-#Ruby settings:
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH=$HOME/.gem/ruby/2.7.2/bin:$PATH
-
-# TimeZsh
-timezsh() {
-  shell=${1-$SHELL}
-  for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
-}
-
-# Pyenv settings
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
-# Python 3.8 Settings
-export PATH="/usr/local/opt/python@3.8/bin:$PATH"
-
-# Setting Homebew's path:
-export PATH="/usr/local/sbin:$PATH"
-
-# Zsh profiler:
-# zprof
